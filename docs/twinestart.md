@@ -2,6 +2,9 @@
 
 [Twine 2](http://cognitiones.kantel-chaos-team.de/multimedia/spieleprogrammierung/twine2.html) ist ein Open Source (GPL) Programm (Linux, MacOS X, Windows), um nichtlineare, interaktive Geschichten (Interactive Fiction (IF)) wie Text-Adventures im Browser zu erzählen. Das Tool schreibt statische Seiten nach HTML5 heraus, so daß serverseitig keinerlei Ansprüche bestehen.
 
+<<<<<<< Local Changes
+Twine ist entwickelt worden, um Menschen ohne Programierkenntnisse das Erstellen von Hypertext-Geschichten zu ermöglichen. In dieser Hinsicht ähnelt es ein wenig dem verflossenen [HyperCard](http://cognitiones.kantel-chaos-team.de/programmierung/hypercard.html), auch das (Default-) Story-Format [Harlowe](https://twine2.neocities.org/) erinnert von seiner Syntax ein wenig an HyperTalk.
+=======
 Twine ist entwickelt worden, um Menschen ohne Programierkenntnisse das Erstellen von Hypertext-Geschichten zu ermöglichen. In dieser Hinsicht ähnelt es ein wenig dem verflossenen [HyperCard](http://cognitiones.kantel-chaos-team.de/programmierung/hypercard.html), auch das (Default-) Story-Format [Harlowe](https://twine2.neocities.org/) erinnert von seiner Syntax ein wenig an HyperTalk.
 
 ![Screenshot](images/twineentdecken.jpg)
@@ -12,6 +15,9 @@ Twine kann als [Webapp](http://twinery.org/2/#!/stories) genutzt werden. Da ich 
 
 Wenn Twine gestartet wird, erscheint zuerst ein Bildschirm, der die bisher mit Twine erstellten Geschichten anzeigt oder noch leer ist. Mit einem Klick auf den grünen rechten Button wird eine neue Geschichte erzeugt. Ich nenne sie »Nachtleben« (der Name einer Twine-Story kann jederzeit geändert werden).
 
+<<<<<<< Local Changes
+>>>>>>> External Changes
+=======
 Es öffent sich der Editor, er sieht so aus:
 
 ![Screenshot](images/nachtleben01.jpg)
@@ -129,4 +135,4 @@ Natürlich kratzt dieses Tutorial nur an der Oberfläche von dem, was mit Twine 
 
 [a2]: https://www.amazon.de/Writing-Interactive-Fiction-Twine-English-ebook/dp/B01ERR2TN2/ref=as_li_ss_tl?_encoding=UTF8&qid=1566754634&sr=8-1&linkCode=ll1&tag=derschockwell-21&linkId=d5dd114a5f74fe977caa48eb1a07c46d&language=de_DE
 
-Uch mich juckt es in den Fingern, nicht nur weitere Tutorials zu Twine, sondern vielleicht sogar richtige Geschichten und/oder Spiele mit Twine zu veröffentlichen. Schaun wir mal, was die Zukunft bringt. *Still digging!*
+Uch mich juckt es in den Fingern, nicht nur weitere Tutorials zu Twine, sondern vielleicht sogar richtige Geschichten und/oder Spiele mit Twine zu veröffentlichen. Schaun wir mal, was die Zukunft bringt. *Still digging!*>>>>>>> External Changes
