@@ -1,0 +1,135 @@
+:: StoryTitle
+alice01sugarcube
+
+
+:: StoryData
+{
+  "ifid": "CCDF52D9-72C0-4661-A1B3-72B3B49CB5B6",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Haus der Herzogin {"position":"200,300","size":"100,100"}
+[img[images/arthurrackham_alice2.jpg]]
+
+Im Haus der Herzogin herrschte Chaos. Die Herzogin warf erst mit einem Topf nach Alice, doch dann drückte sie ihr ein plärrendes [[Baby in den Arm|Schweinchen]].
+
+
+:: Home {"position":"703,101","size":"100,100"}
+[img[images/arthurrackham_alice1.jpg]]
+
+Damit ist die Geschichte zu Ende. Zurück an den [[Start]]?
+
+
+:: Raupe {"position":"600,300","size":"100,100"}
+[img[images/arthurrackham_alice5.jpg]]
+
+Die Raupe war zu bekifft, um ein vernünftiges Gespräch zu führen. Sie murmelte nur immerzu etwas vom »Reich der Ringe« und daß Alice dieses dringend besuchen müßte. Sie sagte noch: »Komm morgen wieder, dann erzähle ich Dir mehr«.
+
+Alice beschloß, daß sie für heute genug habe und ging nach [[Hause|Home]].
+
+
+:: Schweinchen {"position":"105,103","size":"100,100"}
+[img[images/arthurrackham_alice3.jpg]]
+
+Alice verließ das Haus. Das Plärren des Babys veränderte sich langsam zu einem Grunzen und Quieken. Als Alice nachsah, merkte sie, daß sie ein kleines Ferkelchen im Arm hielt.
+
+Erschreckt setzte Alice das Ferkelchen ab. Es lief davon. Und Alice ging verwirrt zurück an den [[Start]].
+
+
+:: Start {"position":"325,100","size":"100,100"}
+Es war ein sonniger Tag. Alice schlenderte gedankenverloren durch das Wunderland. Sie hatte sich ein wenig verirrt. Plötzlich materialisierte sich im Gestrüpp über ihrem Weg die Grinsekatze.
+Alice fragte sie: »Würdest Du mir bitte sagen, wie ich von hier aus weitergehen soll!«
+
+[img[images/arthurrackham_alice6.jpg]]
+
+Die Grinsekatze grinste: »Das hängt zum großen Teil davon ab, wohin Du möchtest. Aber ich will Dir helfen: Geradeaus geht es zum [[Haus der Herzogin]], links zur [[Teeparty des verrückten Hutmachers|Teeparty]] und rechts triffst Du die [[kiffende Raupe auf ihrem Pilz|Raupe]].«
+
+
+:: StoryAuthor {"position":"701,502","size":"100,100"}
+Jörg Kantel
+
+
+:: StoryDisplayTitle {"position":"600,502","size":"100,100"}
+Alice im Reich der Ringe
+
+
+:: StorySubtitle {"position":"803,502","size":"100,100"}
+Twine-Tutorial mit SugarCube 2, Teil 1
+
+
+:: Teeparty {"position":"402,300","size":"100,100"}
+[img[http://localhost:8888/twine/images/arthurrackham_alice4.jpg]]
+
+Alice erreichte die Teaparty vor dem Haus des verrückten Hutmachers. Dieser deklamierte gerade ein langes, dafür um so langweiligeres Gedicht.
+
+Alice hatte sehr schnell genug davon, also beschloß sie, doch die [[Raupe]] aufzusuchen.
+
+
+:: StoryScript [script]
+config.history.controls = false;
+
+:: StoryStylesheet [stylesheet]
+body, #ui-bar {
+  background-color: #ffffff;
+  font-family: "Gorgia", serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+#ui-bar {
+  color: #000000;
+}
+
+#ui-bar-toggle {
+  color: #000000;
+}
+
+#ui-bar-toggle:hover {
+	background-color: #88aaff;
+	border-color: #eee;
+}
+
+#ui-bar-history {
+  display: none;
+}
+
+#ui-dialog-body {
+	background-color: #ffffff;
+	border: 1px solid #444;
+	text-align: left;
+	line-height: 1.5;
+	padding: 1em;
+}
+#ui-dialog-titlebar {
+	background-color: #88aaff;
+	min-height: 24px;
+}
+#ui-dialog-title {
+	margin: 0;
+	padding: 0.2em 3.5em 0.2em 0.5em;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: none;
+}
+
+#menu li a {
+	display: block;
+	padding: 0.25em 0.75em;
+	border: 1px solid transparent;
+	color: #000000;
+	text-transform: none;
+}
+
+#menu li a:hover {
+	background-color: #88aaff;
+	border-color: #eee;
+}
+
+img {
+ 	max-width: 100%;
+	max-height: 100%;
+}

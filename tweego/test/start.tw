@@ -7,7 +7,7 @@ Erste Schritte mit Tweego
 {
     "ifid": "9048AE00-AA05-4AF9-84B1-731A927B2C4A",
     "format": "SugarCube",
-    "format-version": "2.30.0",
+    "format-version": "2.36.1",
     "start": "Start",
     "zoom": 1
 }
@@ -22,6 +22,5 @@ Hallo Jörg!
 
 Es war eine schwere Geburt, aber nun funzt mein Tweego in Visual Studio Code. Schaun wir mal, wie es weitergeht.
 
-:: Story JavaScript
-
-<<script>> config.history.controls = false;<</script>>
+:: StoryScript [script]
+config.history.controls = false;
