@@ -1,10 +1,27 @@
+:: StoryTitle
+
+Erste Schritte mit Tweego
+
+
 :: StoryData
 {
     "ifid": "9048AE00-AA05-4AF9-84B1-731A927B2C4A",
-    "format": "Sugar Cube",
-    "format-version": "3"
+    "format": "SugarCube",
+    "format-version": "2.30.0",
+    "start": "Start",
+    "zoom": 1
 }
 
 :: Start 
 
-Hallo Twee
+!! Hallo Tweego!
+
+Hallo Jörg!
+
+[img[images/joerg.png]]
+
+Es war eine schwere Geburt, aber nun funzt mein Tweego in Visual Studio Code. Schaun wir mal, wie es weitergeht.
+
+:: Story JavaScript
+
+<<script>> config.history.controls = false;<</script>>
