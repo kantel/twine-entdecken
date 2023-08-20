@@ -1,0 +1,14 @@
+#page  {
+    background-color: black;
+    color: white;
+}
+
+#page a {
+    color: orange;
+    text-decoration: none;
+}
+
+#page a:hover {
+    color: orange;
+    background-color: black;
+}

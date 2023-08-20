@@ -1,0 +1,52 @@
+:: meeting_1
+
+[note]
+Auftritt Sylvia von rechts
+[continued]
+
+
+{embed image: "images/buero_sylvia_1.png", alt: "Büro Sylvia Berlin"}
+
+Klopf, Klopf!
+
+[[Herein!->meeting_2]]
+
+:: meeting_2
+
+[note]
+Auftritt Blond von links.
+Sylvia Talking
+[continued]
+
+{embed image: "images/buero_sylvia_2.png", alt: "Büro Sylvia 2"}
+
+Sylvia: »Mein lieber Herr Blond, die Bürgermeisterin hat mich gebeten, ihr für die anstehende Wahlwiederholung meinen besten IT-Spezialisten zur Verfügung zu stellen. Und da habe ich natürlich sofort an Sie gedacht. Sie können gleich morgen anfangen.«
+
+Hans war sofort klar: Damit wollte Sylvia ihn als Konkurrenten um die Referatsleitung kaltstellen. Doch was sollte er tun?
+
+> [[Wütend den Raum verlassen und die Tür hinter sich zuknallen?->wut_1]]
+> [[Gute Miene zum bösen Spiel machen und der Versetzung zustimmen?->gute_miene]]
+
+:: wut_1
+
+[note]
+Abgang Blond nach links
+[continued]
+
+Hans [[verließ wütend den Raum->bad_ending]] und schlug die Tür mit einem lauten Knall hinter sich zu.
+
+:: bad_ending
+
+{embed image: "images/buero_blond_2.png", alt: "Reginald traurig"}
+
+Kaum war Hans wieder in seinem Büro, als er auch schon eine Email bekam. Darin stand in dürren Worten, daß sein Antrag auf Beförderung abgelehnt sei.
+
+Tja Hans, zu hoch gepokert.
+
+Das ist das viel zu frühe Ende!
+
+> {restart link, label: "Noch einmal versuchen?"}
+
+:: gute_miene
+
+Hans: »Dann werde ich mal [[mein Büro räumen->buero_2]].«

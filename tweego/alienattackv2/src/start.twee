@@ -1,0 +1,12 @@
+:: Start
+
+[note]
+Auftritt Reginald.
+Reginald neutral
+[continued]
+
+{embed image: "images/buero_blond_1.png", alt: "Büro Hans Blond"}
+
+Mein Name ist Blond, Hans Blond.
+
+Meine Chefin _Sylvia Berlin_ hat mich zu einem [[Meeting->meeting_1]] gerufen.
