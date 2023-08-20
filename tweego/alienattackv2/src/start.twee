@@ -1,12 +1,21 @@
 :: Start
+config.style.page.color: "gray-1 on black"
+config.style.page.link.font: "18 none"
+config.style.page.link.color: "orange-4"
+config.style.page.link.lineColor: "orange-4"
+config.style.page.link.active.color: "orange-4"
+config.style.page.fork.divider.style: "none"
+--
+
+# Die Geschichte beginnt hier …
 
 [note]
-Auftritt Reginald.
-Reginald neutral
+Auftritt Hans Blond.
+Hans Blond neutral
 [continued]
 
 {embed image: "images/buero_blond_1.png", alt: "Büro Hans Blond"}
 
 Mein Name ist Blond, Hans Blond.
 
-Meine Chefin _Sylvia Berlin_ hat mich zu einem [[Meeting->meeting_1]] gerufen.
+Meine Chefin *Sylvia Berlin* hat mich zu einem [[Meeting->meeting_1]] gerufen.

@@ -1,0 +1,143 @@
+:: StoryTitle
+Reginald und die Gefahr aus dem All
+
+
+:: StoryData
+{
+  "ifid": "1DBD9523-CCEE-4CA7-8BC7-69A6F3319903",
+  "format": "Chapbook",
+  "format-version": "1.2.3",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Start {"position":"200,25","size":"100,100"}
+config.style.page.color: "gray-0 on black"
+config.style.page.link.font: "18 none"
+config.style.page.link.color: "orange-4"
+config.style.page.link.lineColor: "orange-4"
+config.style.page.link.active.color: "orange-4"
+config.style.page.fork.divider.style: "none"
+--
+
+# Die Geschichte beginnt …
+
+[note]
+Auftritt Reginald.
+Reginald neutral
+[continued]
+
+
+{embed image: "images/buero_blond_1.png",  alt: "Reginald im Büro"}
+
+
+Das ist Reginald, Reginald Blond.
+
+Er arbeitet in der IT des Landesamtes für Verfassungsschutz. Seine Chefin Sylvia Berlin hat ihn zu einem [[Meeting->meeting_1]] gerufen.
+
+
+:: bad_ending {"position":"575,325","size":"100,100"}
+[note]
+Auftritt Reginald von rechts.
+Reginald traurig
+[continued]
+
+{embed image: "images/buero_blond_2.png", alt: "Reginald traurig"}
+
+Kaum war Reginald wieder in seinem Büro, als er auch schon eine Email bekam. Darin stand in dürren Worten, daß sein Antrag auf Beförderung abgelehnt sei.
+
+Tja Reginald, zu hoch gepokert.
+
+Das ist das viel zu frühe Ende!
+
+> {restart link, label: "Noch einmal versuchen?"}
+
+
+
+:: buero_2 {"position":"800,325","size":"100,100"}
+[note]
+Auftritt Reginald von rechts.
+Reginald konfus
+[continued]
+
+{embed image: "images/buero_blond_3.png", alt: "Reginald konfus"}
+
+Reginald (zu sich): »Sylvia ist zwar ein intrigantes Biest, aber süß ist sie dennoch.« ❤️
+
+Reginald beschloß, Feierband zu machen und [[nach Hause zu gehen->im_park_1]].
+
+
+
+:: gute_miene {"position":"800,175","size":"100,100"}
+Reginald: »Dann werde ich mal [[mein Büro räumen->buero_2]].«
+
+
+:: im_park_1 {"position":"975,325","size":"100,100"}
+[note]
+Auftritt Felix Leiter von rechts.
+Auftritt Reginald von links.
+Felix Leiter neutral
+Reginald neutral
+[continued]
+
+{embed image: "images/park_1.png", alt: "Im Park"}
+
+
+Der Weg nach Hause führte Reginald wie jeden Abend durch einen kleinen Park. Dort fiel ihm ein gutgekleideter Mann auf, der ihn zu beobachten schien. In der Nähe einer zufällig dort stehenden Baumaschiene sprach ihn der Fremde an:
+
+[note]
+Felix Leiter talking
+[cont]
+
+»Junger Mann, was immer in der nächsten Zeit passieren mag, gehen sie in den Untergrund!«
+
+[note]
+Abgang Felix Leiter nach links
+Reginald konfus
+[cont]
+
+Dann verschwand er wieder und lies Reginald verwirrt zurück.
+
+Reginald setzte seinen Weg [[nach Hause->blond_home_1]] fort.
+
+
+
+:: meeting_1 {"position":"400,25","size":"100,100"}
+<img src="">
+{embed image: "images/buero_sylvia_1.png", alt: "Büro Sylvia Berlin"}
+
+Klopf, Klopf …
+
+[[Herein!->meeting_2]]
+
+
+:: meeting_2 {"position":"625,25","size":"100,100"}
+[note]
+Auftritt Reginald von links.
+Sylvia Talking
+[continued]
+
+{embed image: "images/buero_sylvia_2.png", alt: "Büro Sylvia 2"}
+
+Sylvia: »Mein lieber Herr Blond, die Bürgermeisterin hat mich gebeten, ihr für die anstehende Wahlwiederholung meinen besten IT-Spezialisten zur Verfügung zu stellen. Und da habe ich natürlich sofort an Sie gedacht. Sie können gleich morgen anfangen.«
+
+Reginald war sofort klar: Damit wollte Sylvia ihn als Konkurrenten um die Referatsleitung kaltstellen. Doch was sollte er tun?
+
+> [[Wütend den Raum verlassen und die Tür hinter sich zuknallen?->wut_1]]
+> [[Gute Miene zum bösen Spiel machen und der Versetzung zustimmen?->gute_miene]]
+
+
+:: blond_home_1 {"position":"1150,325","size":"100,100"}
+Zu Hause angekommen mixte sich Reginald erst einmal einen Drink um die Ereignisse des Tages zu verarbeiten.
+
+… Fortsetzung folgt.
+
+
+:: wut_1 {"position":"575,175","size":"100,100"}
+
+[note]
+Abgang Reginald nach links
+[continued]
+
+Reginald [[verließ wütend den Raum->bad_ending]] und schlug die Tür mit einem lauten Knall hinter sich zu.
