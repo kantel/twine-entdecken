@@ -6,7 +6,7 @@ Alice und die Teeparty
 {
   "ifid": "77CD94B5-6894-4CBC-A2D6-D87665597427",
   "format": "Harlowe",
-  "format-version": "3.1.0",
+  "format-version": "3.3.6",
   "start": "Start",
   "zoom": 1
 }
@@ -88,7 +88,7 @@ Der Märzhase entgegnete [[schüchtern->Märzhase]] …
 <img src="images/whiterabbitheroldcol.jpg" />
 
 <=
-Wie jeden Donnerstag ging Alice auf die [[Teeparty->Tisch]] zu ihren Freunden, dem verrückten Hutmacher, dem Märzhasen und dem weißen Kaninchen. Sie war etwas mißmutig gestimmt, wußte aber nicht warum.
+Wie jeden Donnerstag ging Alice auf die [[Teaparty->Tisch]] zu ihren Freunden, dem verrückten Hutmacher, dem Märzhasen und dem weißen Kaninchen. Sie war etwas mißmutig gestimmt, wußte aber nicht warum.
 
 
 :: StoryStylesheet [stylesheet]

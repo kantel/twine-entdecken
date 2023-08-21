@@ -1,0 +1,18 @@
+:: StoryTitle
+Alice und das Chapbook
+
+
+:: StoryData
+{
+  "ifid": "7B407047-0E5A-4A96-990C-D0B893DC346E",
+  "format": "Chapbook",
+  "format-version": "1.2.3",
+  "start": "Start",
+  "zoom": 1
+}
+
+:: Start
+
+{embed image: 'images/alice003.jpg', alt: 'Alice und der Kuchen'}
+
+Nachdem es Alice gelungen war, sowohl in aktuellesten Storyformaten SugarCube 2.36.1 und Harlowe 3.3.6 wie auch Chapbook 1.2.3 aufzutreten, spendierte sie sich und ihren Freunden einen großen Pudding.
