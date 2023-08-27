@@ -1,0 +1,103 @@
+:: StoryTitle
+Alice und Twine
+
+
+:: StoryData
+{
+  "ifid": "05517267-AAB3-44C9-BF6E-3344D8B1E2C5",
+  "format": "Harlowe",
+  "format-version": "3.3.6",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Haus der Herzogin {"position":"200,250","size":"100,100"}
+<img src="images/arthurrackham_alice2.jpg" />
+
+Im Haus der Herzogin herrschte Chaos. Die Herzogin warf erst mit einem Topf nach Alice, doch dann drückte sie ihr ein plärrendes [[Baby in den Arm->Schweinchen]].
+
+
+:: Home {"position":"602,98","size":"100,100"}
+<img src="images/arthurrackham_alice1.jpg" />
+
+Damit ist die Geschichte zu Ende. Zurück an den [[Start]]?
+
+
+:: Raupe {"position":"600,250","size":"100,100"}
+<img src="images/arthurrackham_alice5.jpg" />
+
+Die Raupe war zu bekifft, um ein vernünftiges Gespräch zu führen. Sie murmelte nur immerzu etwas vom »Reich der Ringe« und daß Alice dieses dringend besuchen müßte. Sie sagte noch: »Komm morgen wieder, dann erzähle ich Dir mehr«.
+
+Alice beschloß, daß sie für heute genug habe und ging nach [[Hause->Home]].
+
+
+:: Schweinchen {"position":"200,100","size":"100,100"}
+<img src="images/arthurrackham_alice3.jpg" />
+
+Alice verließ das Haus. Das Plärren des Babys veränderte sich langsam zu einem Grunzen und Quieken. Als Alice nachsah, merkte sie, daß sie ein kleines Ferkelchen im Arm hielt.
+
+Erschreckt setzte Alice das Ferkelchen ab. Es lief davon. Und Alice ging verwirrt zurück an den [[Start]].
+
+
+:: Start {"position":"400,100","size":"100,100"}
+Es war ein sonniger Tag. Alice schlenderte gedankenverloren durch das Wunderland. Sie hatte sich ein wenig verirrt. Plötzlich materialisierte sich im Gestrüpp über ihrem Weg die Grinsekatze.
+Alice fragte sie: »Würdest Du mir bitte sagen, wie ich von hier aus weitergehen soll!«
+
+<img src="images/arthurrackham_alice6.jpg" />
+
+Die Grinsekatze grinste: »Das hängt zum großen Teil davon ab, wohin Du möchtest. Aber ich will Dir helfen: Geradeaus geht es zum [[Haus der Herzogin]], links zur [[Teeparty des verrückten Hutmachers->Teeparty]] und rechts triffst Du die [[kiffende Raupe auf ihrem Pilz->Raupe]].«
+
+
+:: Teeparty {"position":"400,250","size":"100,100"}
+<img src="images/arthurrackham_alice4.jpg" />
+
+Alice erreichte die Teaparty vor dem Haus des verrückten Hutmachers. Dieser deklamierte gerade ein langes, dafür um so langweiligeres Gedicht.
+
+Alice hatte sehr schnell genug davon, also überlegte sie, ob sie doch die [[Raupe]] aufzusuchen oder gleich nach [[Hause|Home]] gehen sollte.
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+tw-link {
+  color: #009991;
+}
+
+tw-link.visited {
+  color: #009991;
+}
+
+tw-link.visited:hover 
+ {
+  color: #009991;
+}
+
+
+tw-link.hover {
+  color: #009991;
+}
+
+.enchantment-link:hover, tw-link:hover {
+ color: #009991;
+}
+
+
+tw-sidebar {
+	display: none;
+}
+
+tw-passage {
+        text-align: left; 
+        font-size: 4vh;
+        font-size: 4vw;
+        font-size: 4vmin;
+        line-height: normal;
+}
+
+img {max-width: 100%;
+     max-height: 100%;
+}
