@@ -39,13 +39,18 @@ Alice beschloß, daß sie für heute genug habe und ging nach [[Hause->Home]].
 :: Schweinchen {"position":"100,100","size":"100,100"}
 {embed image: "http://localhost:8888/twine/chapbooktest/images/ferkelchen.jpg", alt: "Alice und das Schweinchen"}
 
-
 Alice verließ das Haus. Das Plärren des Babys veränderte sich langsam zu einem Grunzen und Quieken. Als Alice nachsah, merkte sie, daß sie ein kleines Ferkelchen im Arm hielt.
 
 Erschreckt setzte Alice das Ferkelchen ab. Es lief davon. Und Alice ging verwirrt zurück an den {restart link, label: "Start"}.
 
 
 :: Start {"position":"300,100","size":"100,100"}
+config.style.page.link.font: "18 bold none"
+config.style.page.link.color: "teal-8"
+config.style.page.link.active.color: "teal-8"
+config.footer.left: "Alice im Reich der Ringe"
+--
+
 {embed image: "http://localhost:8888/twine/chapbooktest/images/grinsekatze.jpg", alt: "Grinsekatze"}
 
 Es war ein sonniger Tag. Alice schlenderte gedankenverloren durch das Wunderland. Sie hatte sich ein wenig verirrt. Plötzlich materialisierte sich im Gestrüpp über ihrem Weg die Grinsekatze.
