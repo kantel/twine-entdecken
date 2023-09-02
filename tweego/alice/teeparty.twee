@@ -1,0 +1,137 @@
+:: StoryTitle
+Alice und die Teeparty
+
+
+:: StoryData
+{
+  "ifid": "77CD94B5-6894-4CBC-A2D6-D87665597427",
+  "format": "Harlowe",
+  "format-version": "3.3.6",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: \ Flamingo {"position":"700,250","size":"100,100"}
+=><=
+<img src="http://localhost:8888/twine/images/flamingo.jpg" />
+
+<=
+Alice dachte, daß ihr dies zu dumm sei. Außerdem wußte sie nicht, wieso sie auf einmal einen Flamingo im Arm hatte. Sie überlegte, ob sie ihren Freund, die [[bekiffte Raupe -> Raupe]] besuchen oder mit der [[Grinsekatze]] plaudern solle.
+
+
+:: \ Kaninchen {"position":"700,100","size":"100,100"}
+<img src="http://localhost:8888/twine/images/whiterabbitclock00tr.png" />
+
+Sprach's und hoppelte aufgeregt davon.
+
+[[Zurück -> Flamingo]] 
+
+
+:: \ Märzhase {"position":"550,100","size":"100,100"}
+=><=
+{
+(set: $green to (color: "#009999"))
+(set: $small to (css: "font-size: 12px"))}<img src="http://localhost:8888/twine/images/marchhare.jpg" />
+
+<=
+»Ich fand es aber $small[$green[klein]] viel schöner.«
+
+Das weiße Kaninchen schaute auf seine Uhr und jammerte: »Ich komme wieder **viel** zu [[spät -> Kaninchen]] …«
+
+
+
+
+:: \ Raupe {"position":"550,350","size":"100,100"}
+=><=
+
+<img src="http://localhost:8888/twine/images/caterpillar.jpg" />
+
+<=
+Rauch … Rauch … Rauch …
+
+Die Raupe war zu bekifft für ein vernünftiges Gespräch. Alice suchte daher doch die [[Grinsekatze]] auf.
+
+
+:: \ Tisch {"position":"250,100","size":"100,100"}
+<img src="http://localhost:8888/twine/images/teapartycol01.jpg" />
+
+Hier saßen alle schon um den Tisch herum. Der verrückte Hutmacher hob seine Teetasse, prostete allen zu und [[schwadronierte|Hutmacher]] … 
+
+
+:: Grinsekatze {"position":"400,250","size":"100,100"}
+
+<img src="http://localhost:8888/twine/images/grinsekatzecol01.jpg" />
+
+
+<=
+Die Grinsekatze sagte »Schön, daß Du mich mal wieder besuchen kommst« und verschwand …
+
+Das ist das Ende.
+
+Alles auf [[Anfang|Start]]?
+
+
+:: Hutmacher {"position":"400,100","size":"100,100"}
+{
+(set: $rumble to (text-style: "rumble"))
+(set: $red to (color: "red"))
+(set: $big to (css: "font-size: 60px"))}<img src="http://localhost:8888/twine/images/madhattercol.jpg" />
+
+»Macht Wunderland wieder $big[$red[$rumble[groß]]]!«
+
+Der Märzhase entgegnete [[schüchtern -> Märzhase]] …
+
+
+:: Start {"position":"100,100","size":"100,100"}
+=><=
+<img src=`"http://localhost:8888/twine/images/whiterabbitheroldcol.jpg`" />
+
+<=
+Wie jeden Donnerstag ging Alice auf die [[Teeparty -> Tisch]] zu ihren Freunden, dem verrückten Hutmacher, dem Märzhasen und dem weißen Kaninchen. Sie war etwas mißmutig gestimmt, wußte aber nicht warum.
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+tw-link {
+  color: #009991;
+}
+
+tw-link.visited {
+  color: #009991;
+}
+
+tw-link.visited:hover 
+ {
+  color: #009991;
+}
+
+
+tw-link.hover {
+  color: #009991;
+}
+
+.enchantment-link:hover, tw-link:hover {
+ color: #009991;
+}
+
+
+tw-sidebar {
+	display: none;
+}
+
+tw-passage {
+        text-align: left; 
+        font-size: 4vh;
+        font-size: 4vw;
+        font-size: 4vmin;
+        line-height: normal;
+}
+
+img {max-width: 100%;
+     max-height: 100%;
+}
