@@ -1,0 +1,273 @@
+:: StoryTitle
+alice01chapbook
+
+
+:: StoryData
+{
+  "ifid": "8bfa3d5f-a638-4426-aaf1-9e7ad64c5a46",
+  "format": "Chapbook",
+  "format-version": "1.2.3",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Aufbruch {"position":"175,675","size":"100,100"}
+{embed image: "images/redqueen.jpg", alt: "Alice rennt mit der roten Königin"}
+
+»Es ist Zeit zu gehen« sagte die Raupe, »der {ring} und die rote Königin werden Dich führen.«
+
+Alice strich mit dem Zeigefinger über den {ring} und eine rote Königin tauchte aus dem Nichts auf, ergriff sie am Arm und rannte mit ihr zu einem [[neuen Ort voller Wunder->Wunderland]].
+
+
+:: Biergarten {"position":"575,525","size":"100,100"}
+{embed image: "images/aliceteaparty.jpg", alt: "Teeparty"}
+
+Hier saßen seltsamerweise wieder ihre alten Freunde, der Märzhase, der verrückte Hutmacher und die Haselmaus an einem Tisch und begrüßten sie lautstark. Alice war verwirrt – aber [[blieb noch eine Weile->Haselmaus]].
+
+
+:: Blumenring {"position":"500,400","size":"100,100"}
+blumenringring: true
+ring: "Blumenring"
+--
+
+Alice steckte den {ring} an ihren Ringfinger. {embed passage: "Magical Items"}
+
+
+:: Brille {"position":"175,525","size":"100,100"}
+brille: true
+magical_item: "Brille"
+--
+
+Alice ergriff die {magical_item} und verstaute sie vorsichtig in ihrer Tasche. {embed passage: "Aufbruch"}
+
+
+:: Dorf {"position":"450,525","size":"100,100"}
+{embed image: "images/weisseritter.jpg", alt: "Der weiße Ritter"}
+
+Der Weg zum Dorf war von einem großen, steineren Wall versperrt. Nur ein Durchgang war offen, der von einem traurig aussehenden, weißen Ritter auf einem dürren Pferd blockiert wurde, der träumend vor sich hindöste.
+
+[if zauberhut]
+Der {magical_item} vibrierte.
+[else]
+Die {magical_item} vibrierte.
+[continue]
+
+[if feder]
+Alice nahm die bewährte Feder und schwebte über den dösenden Ritter, der sie nicht bemerkte.
+[if brille]
+Alice setzte sich die Brille auf und bemerkte, daß sie unsichtbar wurde. Leise schlich sie an den Ritter vorbei auf die andere Seite.
+[if zauberhut]
+Der Zauberhut zog Alice förmlich direkt auf den Wall zu. Sie fühlte sich elastisch wie eine Gummipuppe. Unbemerkt schob sie sich durch die Ritzen der Mauer. Ihr Körper wurde dabei dünn wie ein Faden. Als sie die andere Seite erreicht hatte, nahm sie wieder ihre normale Form an.
+[continue]
+
+Alice erreichte so das Dorf und betrat einen [[Biergarten]] am Ortseingang.
+
+
+
+
+:: Eisenring {"position":"750,400","size":"100,100"}
+eisenring: true
+ring: "Eisenring"
+--
+
+Alice steckte den eisernen Ring an ihren Ringfinger. {embed passage: "Magical Items"}
+
+
+:: Ende {"position":"825,525","size":"100,100"}
+{embed image: "images/grinsekatze5.jpg", alt: "Grinsekatze"}
+
+Am Ausgang des Biergartens traf sie auf die Grinsekatze. Sie grinste nur und meinte: »Hat die Raupe wieder zu viel gekifft?« Und verschwand …
+
+Hier ist die Geschichte vorläufig zu Ende.
+
+[if key]
+Glückwunschsch! Das war der längste Durchlauf, der bisher spielbar ist.
+[else]
+Du bist schon weit gekommen, aber da geht noch mehr…
+[continue]
+
+{restart link, label: "Noch einmal spielen"}?
+
+
+:: Feder {"position":"50,525","size":"100,100"}
+feder: true
+magical_item: "Feder"
+--
+
+Alice ergriff die {magical_item} und verstaute sie vorsichtig in ihrer Tasche. {embed passage: "Aufbruch"}
+
+
+:: Flamingo {"position":"700,250","size":"100,100"}
+{embed image: "images/flamingo2_s.jpg", alt: "Alice mit rosa Flamingo"}
+
+Alice dachte, daß ihr dies zu dumm sei. Außerdem wußte sie nicht, wieso sie auf einmal einen rosa Flamingo im Arm hatte. Sie überlegte, ob sie ihren Freund, die [[bekiffte Raupe->Raupe]] besuchen oder mit der [[Grinsekatze]] plaudern solle.
+
+
+:: Flug {"position":"450,675","size":"100,100"}
+key: true
+--
+
+Alice nahm die Feder in ihre Hand und schwebte langsam nach oben. Die Feder brachte auch ihren {ring} zum Schimmern und der lenkte ihre Hand zu einem der Schlüssel. Alice pflückte ihn vom Ast und verstaute ihn in ihrer Tasche. Vorsichtig schwebte sie wieder nach unten.
+
+Nun war sie bereit, das [[Dorf->Dorf]] zu erkunden.
+
+
+:: Goldring {"position":"375,400","size":"100,100"}
+goldring: true
+ring: "Goldring"
+--
+
+Alice steckte den {ring} an ihren Ringfinger. {embed passage: "Magical Items"}
+
+
+:: Gravurring {"position":"625,400","size":"100,100"}
+gravurring: true
+ring: "Gravurring"
+--
+
+Alice steckte den Ring mit der seltsamen Gravur an ihren Ringfinger. {embed passage: "Magical Items"}
+
+
+:: Grinsekatze {"position":"700,100","size":"100,100"}
+{embed image: "images/grinsekatze_large.jpg", alt: "Grinsekatze"}
+
+Die Grinsekatze grinste Alice breit an – wie es Grinsekatzen eben so tun – und sagte: »Schön, daß Du mich mal wieder besuchen kommst« und verschwand …
+
+Das ist ein viel zu frühes Ende.
+
+Alles auf {restart link, label: "Anfang"}?
+
+
+:: Haselmaus {"position":"700,525","size":"100,100"}
+{embed image: "images/haselmaus.jpg", alt: "Schabernack mit der Haselmaus"}
+
+Als der Hutmacher und der Märzhase jedoch anfingen, die Haselmaus kopfüber in den Teetopf zu stülpen, hatte sie genug. Sie beschloß, die Party zu [[verlassen->Ende]]
+
+
+:: Haus der Herzogin {"position":"100,250","size":"100,100"}
+{embed image: "images/herzogin.jpg", alt: "Im Haus der Herzogin"}
+
+
+Im Haus der Herzogin herrschte Chaos. Erst warf die mürrische Köchin mit einem Topf nach Alice und verfehlte sie nur knapp, doch dann drückte die Herzogin Alice ein plärrendes [[Baby in den Arm->Schweinchen]].
+
+
+:: Home {"position":"500,100","size":"100,100"}
+{embed image: "images/grinsekatze_large.jpg", alt: "Grinsekatze"}
+
+Auf dem Weg nach Hause begegnete Alice wieder der Grinsekatze. Sie grinste Alice breit an – wie es Grinsekatzen eben so tun – und fragte: »Na, war die Raupe wieder bekifft?«
+
+Damit ist die Geschichte zu Ende. {restart link, label: "Noch einmal spielen"}?
+
+
+:: Hutmacher {"position":"875,400","size":"100,100"}
+[align center]
+{embed image: "images/madhattercol-s.jpg", alt: "Mad Hatter"}
+
+
+»Macht Wunderland wieder <span style="color:red; font-size: 60px;">groß!</span>
+[continue]
+
+Der Märzhase entgegnete [[schüchtern->Märzhase]] …
+
+
+:: Kaninchen {"position":"875,100","size":"100,100"}
+{embed image: "images/whiterabbitclock00tr.png", alt: "Weißes Kaninchen mit Uhr"}
+
+Sprach's und hoppelte aufgeregt davon.
+
+[[Zurück->Flamingo]] …
+
+
+:: Magical Items {"position":"50,400","size":"100,100"}
+{embed image: "images/raupe3_g_kay.jpg", alt: "Alice und die Raupe"}
+
+Sie wollte schon den Pilz verlassen, aber die Raupe ergriff ihren Arm und sagte: »Du kannst noch einen, aber nur einen weiteren Gegenstand aus meinem magischen Kästchen für Deine gedahrvolle Reise mitnehmen. Jeder von ihnen kann Dir auf seine Weise helfen, aber Du weißt nicht wie und ich weiß nicht wann.«
+
+Sie öffnete einen zweiten Kasten. Dort lagen eine [[Feder]], eine [[Brille]] und ein [[Zauberhut]].
+
+
+:: Märzhase {"position":"875,250","size":"100,100"}
+{embed image: "images/marchhare.jpg", alt: "Märzhase"}
+
+»Ich fand es aber <span style="color:green; font-size:14px;">klein</span> viel schöner.«
+
+Das weiße Kaninchen schaute auf seine Uhr und jammerte: »Ich komme wieder **viel** zu [[spät->Kaninchen]] …«
+
+
+:: Raupe {"position":"500,250","size":"100,100"}
+{embed image: "images/raupe_large.jpg", alt: "Raupe"}
+
+
+Die Raupe erzählte Alice von einem geheimnisvollen Tal im Wunderland, das »Reich der Ringe« genannt wurde. Nur fünf Zugänge gäbe es zu diesem Tal, jeder sei durch einen besonderen Ring gesichert. Leider wüßte sie nicht, welcher Ring zu welchem Zugang führe und welche Gefahren hinter den jeweiligen Zugängen lauerten. Alice könne aber nur einen Ring mitnehmen. Die Raupe öffnete ein kleines Schmuckkästchen und zeigte Ihr einen [[eisernen->Eisenring]], einen [[silbernen->Silberring]], einen [[goldenen Ring->Goldring]], einen [[Ring mit einer durchbrochenen Blume->Blumenring]] und schließlich einen [[Ring mit einer seltsamen Gravur->Gravurring]].
+
+
+:: Schweinchen {"position":"100,100","size":"100,100"}
+{embed image: "images/ferkelchen.jpg", alt: "Alice und das Schweinchen"}
+
+
+Alice verließ das Haus. Das Plärren des Babys veränderte sich langsam zu einem Grunzen und Quieken. Als Alice nachsah, merkte sie, daß sie ein kleines Ferkelchen im Arm hielt.
+
+Erschreckt setzte Alice das Ferkelchen ab. Es lief davon. Und Alice ging verwirrt zurück an den {restart link, label: "Start"}.
+
+
+:: Silberring {"position":"250,400","size":"100,100"}
+silberring: true
+ring: "Silberring"
+--
+
+Alice steckte den silbernen Ring an ihren Ringfinger. {embed passage: "Magical Items"}
+
+
+:: Start {"position":"300,100","size":"100,100"}
+config.style.page.link.font: "18 bold none"
+config.style.page.link.color: "teal-8"
+config.style.page.link.active.color: "teal-8"
+config.footer.left: "Alice im Reich der Ringe"
+silberring: false
+goldring: false
+blumenring: false
+gravurring: false
+eisenring: false
+brille: false
+feder: false
+zauberhut: false
+key: false
+--
+
+{embed image: "images/grinsekatze.jpg", alt: "Grinsekatze"}
+
+Es war ein sonniger Tag. Alice schlenderte gedankenverloren durch das Wunderland. Sie hatte sich ein wenig verirrt. Plötzlich materialisierte sich im Gestrüpp über ihrem Weg die Grinsekatze.
+Alice fragte sie: »Würdest Du mir bitte sagen, wie ich von hier aus weitergehen soll!«
+
+Die Grinsekatze grinste: »Das hängt zum großen Teil davon ab, wohin Du möchtest. Aber ich will Dir helfen: Geradeaus geht es zum [[Haus der Herzogin]], links zur [[Teeparty des verrückten Hutmachers->Teeparty]] und rechts triffst Du die [[kiffende Raupe auf ihrem Pilz->Raupe]].«
+
+
+:: Teeparty {"position":"300,250","size":"100,100"}
+{embed image: "images/teaparty_large.jpg", alt: "Teeparty"}
+
+Alice erreichte die Teeparty mit dem Märzhasen und dem weißen Kaninchen vor dem Haus des verrückten Hutmachers. Dieser deklamierte gerade ein langes, dafür um so langweiligeres Gedicht. stand dann auf, hob seine Teetasse und begann [[lautstark zu schwadronieren->Hutmacher]].
+
+
+
+:: Wunderland {"position":"300,675","size":"100,100"}
+{embed image: "images/chessboard.png", alt: "Blick auf das Wunderland"}
+
+Die rote Königin war wieder verschwunden. Alice staunte. Ist das der geheime Ort? Sie stand auf einem Hügel, vor ihr ein weites Tal und dahinter das Meer. Auf einem weiteren Hügel überragte eine Burg ein kleines Dorf, das sich im Halbkreis um den Burghügel schmiegte.
+
+Sie drehte sich um und sah einen riesigen Baum hinter sich. An den Ästen hingen dutzende bronzener Schlüssel.
+
+[if feder]
+Die Feder schien sich in ihrer Tasche zu bewegen, so als ob sie Alice daran erinnern wollte, daß sie [[fliegen könne->Flug]]. Oder sollte sie erst einmal das [[Dorf aufsuchen->Dorf]] und weitere Erkundundungen einziehen?
+[else]
+Leider waren die Schlüssel unerreichbar für Alice. Sie beschloß daher, [[den Hügel herunter ins Dorf->Dorf]] zu gehen.
+
+
+:: Zauberhut {"position":"300,525","size":"100,100"}
+zauberhut: true
+magical_item: "Zauberhut"
+--
+
+Alice ergriff den {magical_item} und setzte ihn sich vorsichtig auf den Kopf. Der Hut sagte zu ihr »Guten Tag, Alice. Das war eine gute Wahl. Alice war etwas überrascht, sie hatte noch nie einen Hut getroffen, der reden konnte. Aber im Wunderland überraschte sie schon lange nichts mehr. 
+
+{embed passage: "Aufbruch"}

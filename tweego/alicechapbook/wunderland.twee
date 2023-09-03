@@ -1,0 +1,133 @@
+:: StoryTitle
+Wunderland
+
+
+:: StoryData
+{
+  "ifid": "BC14780F-E153-49B0-9805-F3660A6805B8",
+  "format": "Harlowe",
+  "format-version": "3.3.6",
+  "start": "Start",
+  "zoom": 0.6
+}
+
+
+:: \ Blumenring {"position":"554,354","size":"100,100"}
+(set: $ring to "Blumenring") Alice steckte den Ring mit der zerbrochenen Blume an ihren Ringfinger. Sie wollte schon den Pilz verlassen, aber die Raupe ergriff ihren Arm und sagte: »Du kannst noch einen weiteren Gegenstand aus meinem magischen Kästchen für Deine Reise mitnehmen. Jeder von ihnen kann Dir auf Deiner Reise helfen, aber Du weißt nicht wie und wann.«
+Er öffnete einen zweiten Kasten. Dort lagen eine [[Feder]], eine [[Brille]] und ein [[Zauberhut]].
+
+
+:: \ Dorf {"position":"393,852","size":"100,100"}
+<img src="http://blog.schockwellenreiter.de/gems/wunderland2/images/knight.jpg" />
+
+Der Weg zum Dorf war von einem großen, steineren Wall versperrt. Nur ein Durchgang war offen, der von einem traurig aussehenden Ritter auf einem dürren Pferd blockiert wurde, der träumend vor sich hindöste.
+
+(if: $magicalItem is "Zauberhut")[Der](else:)[Die] (print: $magicalItem) vibrierte.
+
+(if: $magicalItem is "Feder")[Alice nahm die bewährte Feder und schwebte über den schlafenden Ritter, der sie nicht bemerkte.](elseif:  $magicalItem is "Brille")[Alice setzte sich die Brille auf und bemerkte, daß sie unsichtbar wurde. Leise schlich sie an den Ritter vorbei auf die andere Seite.](elseif:  $magicalItem is "Zauberhut")[Der Zauberhut zog Alice förmlich direkt auf den Wall zu. Sie fühlte sich elastisch wie eine Gummipuppe. Unbemerkt schob sie sich durch die Ritzen der Mauer. Ihr Körper wurde dabei dünn wie ein Faden. Als sie die andere Seite erreicht hatte, nahm sie wieder ihre normale Form an.]
+
+Alice erreichte so das Dorf und betrat einen [[Biergarten]] am Ortseingang.
+
+
+:: \ Eisenring {"position":"107,359","size":"100,100"}
+(set: $ring to "Eisenring") Alice steckte den eisernen Ring an ihren Ringfinger. Sie wollte schon den Pilz verlassen, aber die Raupe ergriff ihren Arm und sagte: »Du kannst noch einen weiteren Gegenstand aus meinem magischen Kästchen für Deine Reise mitnehmen. Jeder von ihnen kann Dir auf Deiner Reise helfen, aber Du weißt nicht wie und wann.«
+Er öffnete einen zweiten Kasten. Dort lagen eine [[Feder]], eine [[Brille]] und ein [[Zauberhut]].
+
+
+:: \ Ende {"position":"723,855","size":"100,100"}
+<img src="http://blog.schockwellenreiter.de/gems/wunderland2/images/grinse-katze.png" />
+
+Am Ausgang des Biergartens traf sie auf die Grinsekatze. Sie grinste nur und meinte: »Hat die Raupe wieder zu viel gekifft?« Und verschwand …
+
+
+:: \ Flug {"position":"208,858","size":"100,100"}
+(set: $gotKey to true)Alice nahm die Feder in ihre Hand und schwebte langsam nach oben. Die Feder brachte auch ihren (print: $ring) zum Schimmern und der lenkte ihre Hand zu einem der Schlüssel. Alice pflückte ihn vom Ast und verstaute ihn in ihrer Tasche. Vorsichtig schwebte sie wieder nach unten.
+
+Nun war sie bereit, das [[Dorf -> Dorf]] zu erkunden.
+
+
+:: \ Goldring {"position":"407,354","size":"100,100"}
+(set: $ring to "Goldring") Alice steckte den goldenen Ring an ihren Ringfinger. Sie wollte schon den Pilz verlassen, aber die Raupe ergriff ihren Arm und sagte: »Du kannst noch einen weiteren Gegenstand aus meinem magischen Kästchen für Deine Reise mitnehmen. Jeder von ihnen kann Dir auf Deiner Reise helfen, aber Du weißt nicht wie und wann.«
+Er öffnete einen zweiten Kasten. Dort lagen eine [[Feder]], eine [[Brille]] und ein [[Zauberhut]].
+
+
+:: \ Gravurring {"position":"704,354","size":"100,100"}
+(set: $ring to "Gravurring") Alice steckte den Ring mit der Gravur an ihren Ringfinger. Sie wollte schon den Pilz verlassen, aber die Raupe ergriff ihren Arm und sagte: »Du kannst noch einen weiteren Gegenstand aus meinem magischen Kästchen für Deine Reise mitnehmen. Jeder von ihnen kann Dir auf Deiner Reise helfen, aber Du weißt nicht wie und wann.«
+Im Kasten ist eine [[Feder]], eine [[Brille]] und ein [[Zauberhut]].
+
+
+:: \ Silberring {"position":"254,354","size":"100,100"}
+(set: $ring to "Silberring") Alice steckte den silbernen Ring an ihren Ringfinger. Sie wollte schon den Pilz verlassen, aber die Raupe ergriff ihren Arm und sagte: »Du kannst noch einen weiteren Gegenstand aus meinem magischen Kästchen für Deine Reise mitnehmen. Jeder von ihnen kann Dir auf Deiner Reise helfen, aber Du weißt nicht wie und wann.«
+Er öffnete einen zweiten Kasten. Dort lagen eine [[Feder]], eine [[Brille]] und ein [[Zauberhut]].
+
+
+:: Biergarten {"position":"563,852","size":"100,100"}
+<img src="http://blog.schockwellenreiter.de/gems/wunderland2/images/tea-party.jpg" />
+
+Hier saßen seltsamerweise wieder ihre alten Freunde, der Märzhase, der verrückte Hutmacher und die Haselmaus an einem Tisch und begrüßten sie lautstark. Alice war verwirrt und beschloß, [[die Geschichte zu verlassen -> Ende]].
+
+
+
+:: Brille {"position":"399,543","size":"100,100"}
+(set: $magicalItem to "Brille") Alice ergriff die (print: $magicalItem) und verstaute sie vorsichtig in ihrer Tasche. »Es ist Zeit zu gehen« sagte die Raupe, »der (print: $ring) wird Dich führen.«
+Alice strich mit dem Zeigefinger über den (print: $ring) und eine geheimnisvolle Macht ergriff sie und brachte sie zu einem [[leuchtenden Platz ->Wunderland]].
+
+
+:: Feder {"position":"243,538","size":"100,100"}
+(set: $magicalItem to "Feder") Alice ergriff die (print: $magicalItem) und verstaute sie vorsichtig in ihrer Tasche. »Es ist Zeit zu gehen« sagte die Raupe, »der (print: $ring) wird Dich führen.«
+Alice strich mit dem Zeigefinger über den (print: $ring) und eine geheimnisvolle Macht ergriff sie und brachte sie zu einem [[leuchtenden Platz ->Wunderland]].
+
+
+:: Pilz der Raupe {"position":"399,199","size":"100,100"}
+==><==
+<img src="http://blog.schockwellenreiter.de/gems/wunderland2/images/caterpillar.jpg" />
+<==
+
+Alice wurde zum Pilz der kiffenden Raupe gerufen. Sie erzählte ihr von einem geheimnisvollen Ort im Wunderland. Nur fünf Zugänge gäbe es zu diesem Tal, jeder sei durch einen besonderen Ring gesichert. Leider wüßte sie nicht, welcher Ring zu welchem Zugang führe und welche Gefahren hinter den jeweiligen Zugängen lauerten. Alice könne aber nur einen Ring mitnehmen. Die Raupe öffnete ein kleines Schmuckkästchen und zeigte Ihr einen [[eisernen -> Eisenring]], einen [[silbernen -> Silberring]], einen [[goldenen Ring -> Goldring]], einen [[Ring mit einer durchbrochenen Blumen -> Blumenring]] und schließlich einen [[Ring mit einer seltsamen Gravur -> Gravurring]].
+
+
+:: Start {"position":"400,50","size":"100,100"}
+### Alice und die Zauberringe
+
+Tutorial: Variablen, Makros und Hooks in Harlowe
+
+[[Start->Pilz der Raupe]] 
+
+
+:: Wunderland {"position":"400,700","size":"100,100"}
+Alice staunte. Ist das der geheime Ort? Sie stand auf einem Hügel, vor ihr ein weites Tal und dahinter das Meer. Auf einem weiteren Hügel überragte eine Burg ein kleines Dorf, das sich im Halbkreis um den Burghügel schmiegte.
+
+Sie drehte sich um und sah einen riesigen Baum hinter sich. An den Ästen hingen dutzende bronzener Schlüssel.
+
+(if: $magicalItem is "Feder")[Die Feder schien sich in ihrer Tasche zu bewegen, so als ob sie Alice daran erinnern wollte, daß sie [[fliegen könne -> Flug]]. Oder sollte sie erst einmal das [[Dorf aufsuchen -> Dorf]] und weitere Erdundungen einziehen?](else:)[Leider waren die Schlüssel unerreichbar für Alice. Sie beschloß daher, [[den Hügel herunter ins Dorf -> Dorf]] zu gehen.]
+
+
+:: Zauberhut {"position":"548,545","size":"100,100"}
+(set: $magicalItem to "Zauberhut") Alice setzte sich den (print: $magicalItem) auf. »Es ist Zeit zu gehen« sagte die Raupe, »der (print: $ring) wird Dich führen.«
+Alice strich mit dem Zeigefinger über den (print: $ring) und eine geheimnisvolle Macht ergriff sie und brachte sie zu einem [[leuchtenden Platz ->Wunderland]].
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+tw-sidebar tw-icon.redo {
+        display: none;
+}
+tw-sidebar tw-icon.undo {
+        display: none;
+}
+
+tw-passage {
+        text-align: left; 
+        font-size: 4vh;
+        font-size: 4vw;
+        font-size: 4vmin;
+        line-height: normal;
+}
+
+img {max-width: 100%;
+     max-height: 100%;
+}
