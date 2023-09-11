@@ -170,17 +170,17 @@ Humpel Pumpel schwieg eine Weile beleidigt. {reveal link: "»Und wie heißt Du?�
 
 Darauf wußte Alice keine Antwort. »Wenn Du weiter so auf der Mauer zappelst, wirst Du noch herunterfallen« sagte sie schließlich, nur um überhaupt etwas zu sagen.
 
-Humpel Pumpel: »{reveal link: "Nein", passage: "Humpel Pumpel 4"}!«
+Humpel Pumpel: {reveal link: "»Nein!«", passage: "Humpel Pumpel 4"}
 
 
 :: Humpel Pumpel 4 {"position":"1000,400","size":"100,100"}
-Nein!«
+»Nein!«
 
-Alice: »{reveal link: "Doch", passage: "Humpel Pumpel 5"}
+Alice: {reveal link: "»Doch!«", passage: "Humpel Pumpel 5"}
 
 
 :: Humpel Pumpel 5 {"position":"1000,250","size":"100,100"}
-Doch!«
+»Doch!«
 
 Humpel Pumpel: »Oh!«
 
