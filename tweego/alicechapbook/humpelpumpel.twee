@@ -1,0 +1,35 @@
+:: StoryTitle
+Chapbook Tests
+
+
+:: StoryData
+{
+  "ifid": "DFF89989-2C9A-4B29-86E9-24831C891080",
+  "format": "Chapbook",
+  "format-version": "1.2.3",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Passage 1 {"position":"225,100","size":"100,100"}
+Nein!«
+
+Alice: »{reveal link: "Doch", passage: "Passage 2"}
+
+
+:: Passage 2 {"position":"350,100","size":"100,100"}
+Doch!«
+
+Humpty Dumpty: »Oh
+
+
+:: Start {"position":"100,100","size":"100,100"}
+config.style.page.verticalAlign: "top"
+config.body.transition.name: "none"
+--
+
+Alice: »Du wirst noch von der Mauer fallen.«
+
+Humpty Dumpty: »{reveal link: "Nein", passage: "Passage 1"}!«
+
