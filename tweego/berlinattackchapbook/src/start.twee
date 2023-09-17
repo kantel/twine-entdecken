@@ -1,0 +1,38 @@
+:: StoryTitle
+Berlin Attack
+
+
+:: StoryData
+{
+  "ifid": "8327F6CA-5228-4AB7-AF96-63B96B54B58D",
+  "format": "Chapbook",
+  "format-version": "1.2.3",
+  "start": "Start",
+  "zoom": 1.0
+}
+
+:: Start
+config.style.page.color: "gray-0 on black"
+config.style.page.link.font: "18 none"
+config.style.page.link.color: "orange-4"
+config.style.page.link.lineColor: "orange-4"
+config.style.page.link.active.color: "orange-4"
+config.style.page.fork.divider.style: "none"
+has_stick: false
+hide_stick: false
+--
+
+# Die Geschichte beginnt …
+
+[note]
+Auftritt Hans Blond.
+Hans neutral
+[continued]
+
+
+{embed image: "images/buero_hans_1.png",  alt: "Hans Blond im Büro"}
+
+
+Das ist Hans, Hans Blond.
+
+Er arbeitet in der IT des Landesamtes für Verfassungsschutz. Seine Chefin *Sylvia Berlin* hat ihn zu einem [[Meeting->Holger]] gerufen.

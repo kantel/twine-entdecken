@@ -1,0 +1,39 @@
+:: Holger
+has_stick: true
+--
+[note]
+Auftritt Holger Kern von rechts.
+Hans neutral
+[continued]
+
+
+{embed image: "images/buero_kern.png",  alt: "Hans und Holger"}
+
+Auf dem Weg zum Büro seiner Chefin lief Hans sein alter Freund und Kollege *Holger Kern* über den Weg. {reveal link: "Er war ganz aufgeregt.", passage: "Holger 1"}
+
+:: Holger 1
+
+<p>
+
+Holger: »Gut, daß ich Dich treffe. {reveal Link: "Du mußt unbedingt diesen Datenstick für mich aufheben.«", passage: "Holger 2"}
+
+:: Holger 2
+
+Du mußt unbedingt diesen Datenstick für mich aufheben.«
+
+»Er enthält geheime Daten über eine {reveal Link: "Verschwörung gegen den Senat.«", passage: "Holger 3"}
+
+:: Holger 3
+
+Verschwörung gegen den Senat.«
+
+»Du mußt ihn gut verstecken und darfst ihn niemanden geben, [[schon gar nicht Sylvia->Holger 4]].«
+
+:: Holger 4
+
+{embed image: "images/buero_kern_2.png",  alt: "Hans und Holger"}
+
+Er drückte Hans den Stick in die Hand. Doch was sollte dieser tun?
+
+> [[Zurück in sein Büro und den Stick dort verstecken und damit eine Verspätung mit seinem Meeting riskieren?->Hide Stick]]
+> [[Ihn einfach in die Tasche stecken und hoffen, daß alles gut geht?->Meeting]]

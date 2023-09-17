@@ -1,0 +1,12 @@
+:: Hide Stick
+hide_stick: true
+--
+[note]
+Auftritt Hans Blond von links.
+Hans neutral
+[continued]
+
+
+{embed image: "images/buero_hans_1a.png",  alt: "Hans Blond im Büro"}
+
+Hans versteckte den Stick in seinem Büro unter einer Kaffeetasse. Dann machte er sich schleunigst auf zu seinem [[Treffen mit seiner Chefin->Meeting]].

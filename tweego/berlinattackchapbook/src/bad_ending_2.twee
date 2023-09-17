@@ -1,0 +1,24 @@
+:: Wut
+
+[note]
+Abgang Hans nach links
+[continued]
+
+Hans [[verließ wütend den Raum->Bad Ending 2]] und schlug die Tür mit einem lauten Knall hinter sich zu.
+
+:: Bad Ending 2
+
+[note]
+Auftritt Hans von rechts.
+Reginald Hans traurig
+[continued]
+
+{embed image: "images/buero_hans_2.png", alt: "Hans traurig"}
+
+Kaum war Hans wieder in seinem Büro, als er auch schon eine Email bekam. Darin stand in dürren Worten, daß sein Antrag auf Beförderung abgelehnt sei.
+
+Tja Hans, zu hoch gepokert.
+
+Das ist das viel zu frühe Ende!
+
+> {restart link, label: "Noch einmal versuchen?"}

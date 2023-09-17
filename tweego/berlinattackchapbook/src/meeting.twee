@@ -1,0 +1,33 @@
+:: Meeting
+
+{embed image: "images/buero_sylvia_1.png",  alt: "Sylvia Berlin im Büro"}
+
+Klopf, Klopf …
+
+[note]
+Auftritt Sylvia Berlin von rechts.
+[continued]
+
+[if has_stick && !hide_stick]
+
+{reveal link: "Sylvia: »Herein!«", passage: "Wachschutz 1"}
+
+[else]
+
+Sylvia: »[[Herein!->Meeting 2]]«
+
+:: Meeting 2
+
+[note]
+Auftritt Hans Blond von links.
+Sylvia talking.
+[continued]
+
+{embed image: "images/buero_sylvia_2.png",  alt: "Sylvia Berlin und Hans Blond im Büro"}
+
+Sylvia: »Mein lieber Herr Blond, die Bürgermeisterin hat mich gebeten, ihr für die anstehende Wahlwiederholung meinen besten IT-Spezialisten zur Verfügung zu stellen. Und da habe ich an Sie gedacht. Sie können morgen gleich anfangen.«
+
+Hans war sofort klar: Damit wollte Sylvia ihn als Konkurrenten um die Referatsleitung kaltstellen. Doch was sollte er tun?
+
+> [[Wütend den Raum verlassen und die Tür hinter sich zuknallen?->Wut]]
+> [[Gute Miene zum bösen Spiel machen und der Versetzung zustimmen?->Versetzung zugestimmt]]
