@@ -1,0 +1,71 @@
+:: StoryTitle
+Smashing Pumpkins
+
+
+:: StoryData
+{
+  "ifid": "E5AEA931-14D3-45C9-9238-0198C7424C7D",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Bank {"position":"450,350","size":"100,100"}
+Norden: [[Vorplatz]]
+Westen: [[Hügel]]
+Osten:  [[Pförtnerhaus]]
+
+
+:: Brunnen {"position":"450,50","size":"100,100"}
+Osten: [[Urnengräber]]
+Westen: [[Gräberfeld]]
+Süden: [[Vorplatz]]
+
+
+:: Gräberfeld {"position":"100,50","size":"100,100"}
+Osten: [[Brunnen]] 
+Süden: [[Pfad]]
+
+
+:: Hügel {"position":"100,350","size":"100,100"}
+
+
+
+:: Pfad {"position":"100,200","size":"100,100"}
+Norden: [[Gräberfeld]] 
+Osten:  [[Vorplatz]]
+Süden:  [[Hügel]]
+
+
+:: Pförtnerhaus {"position":"675,350","size":"100,100"}
+Norden: [[Tor]]
+Westen: [[Bank]]
+
+
+:: Start {"position":"300,100","size":"100,100"}
+Du wachst in einer alten Kapelle auf. Über dem Altar schwebt ein riesiger Kürbiskopf, der Dich an Deine Mission erinnert. Du mußt den wahnsinnigen Dorfpriester stoppen, der die als Halloween-Dekoration geschnitzten Kürbisköpfe zertrampelt.
+
+Du rappelst Dich auf und [[verläßt die Kapelle->Vorplatz]].
+
+
+:: Tor {"position":"675,200","size":"100,100"}
+Norden: [[Urnengräber]]
+Westen: [[Vorplatz]]
+Süden:  [[Pförtnerhaus]] 
+
+
+:: Urnengräber {"position":"675,50","size":"100,100"}
+Süden: [[Tor]]
+Westen: [[Brunnen]] 
+
+
+
+:: Vorplatz {"position":"450,200","size":"100,100"}
+Du stehst auf dem Vorplatz neben der Leichenhalle. Die Tür der Kapelle schlägt mit einem lauten Knall hinter Dir zu. Am Nachthimmel leuchtet der Vollmond.
+
+Vor die steht eine [[alte, verwitterte Sitzbank->Bank]].
+Westen: [[Pfad]]
+Osten:  [[Tor]] 
+Norden: [[Brunnen]]

@@ -12,25 +12,38 @@ Alice Tutorial 1
 }
 
 
-:: Start 
+:: Grinsekatze_2 {"position":"425,200","size":"100,100"}
+<img src="images/grinsekatze2.jpg" />
 
-<img src="images/grinsekatze1.jpg" />
+Auf dem Weg nach Hause materialisierte sich pötzlich die Grinsekatze wieder vor Alice. Sie grinste breit – so breit können nur Grinsekatzen grinsen – und fragte: »Na, war die Raupe wieder bekifft?«
 
-Es war ein sonniger Tag. Alice schlenderte gedankenverloren durch das Wunderland. Sie hatte sich ein wenig verirrt. Plötzlich materialisierte sich vor der alten Ruine am Eingang des Wunderlandes die Grinsekatze.
-
-Alice fragte sie: »Würdest Du mir bitte sagen, wie ich von hier aus weitergehen soll!«
-
-Die Grinsekatze grinste: »Das hängt zum großen Teil davon ab, wohin Du möchtest. Aber ich will Dir helfen: Geradeaus geht es zum [[Haus der Herzogin->herzogin]], links zur [[Teeparty des verrückten Hutmachers->teaparty]] und rechts triffst Du die [[kiffende Raupe->raupe]] auf ihrem Pilz.«
+Alice hatte jetzt endgültig genug von ihrem heutigen Ausflug und [[verließ das Wunderland->Home]].
 
 
-:: herzogin
-
+:: Herzogin {"position":"100,375","size":"100,100"}
 <img src="images/duchesse.jpg" />
 
-Im Haus der Herzogin herrschte Chaos. Erst warf die Köchin mit einem Topf nach Alice, dann drückte die Herzogin ihr ein plärrendes [[Baby->schweinchen]] in den Arm.
+Im Haus der Herzogin herrschte Chaos. Erst warf die Köchin mit einem Topf nach Alice, dann drückte die Herzogin ihr ein plärrendes [[Baby->Schweinchen]] in den Arm.
 
-:: schweinchen
 
+:: Home {"position":"425,50","size":"100,100"}
+<img src="images/home.jpg" />
+
+Zuhause traf Alice auf ihre Schwester und das weiße Kaninchen, mit denen sie zusammen noch gemütlich ein Kännchen Kaffee trank. So wurde es doch noch ein gelungengener Nachmittag.
+
+[[Noch einmal spielen->Start]]?
+
+
+:: Raupe {"position":"425,375","size":"100,100"}
+<img src="images/caterpillar.jpg" />
+
+
+Die Raupe war zu bekifft, um ein vernünftiges Gespräch zu führen. Sie murmelte nur immerzu etwas vom »Reich der Ringe« und daß Alice dieses dringend besuchen müßte. Sie sagte noch: »Komm morgen wieder, dann erzähle ich Dir mehr«.
+
+Alice beschloß, daß sie für heute genug habe und ging nach [[Hause->Grinsekatze_2]].
+
+
+:: Schweinchen {"position":"100,200","size":"100,100"}
 <img src="images/alicepig.jpg" />
 
 
@@ -38,38 +51,24 @@ Alice verließ das Haus. Das Plärren des Babys veränderte sich langsam zu eine
 
 Erschreckt setzte Alice das Ferkelchen ab. Es lief davon. Und Alice ging verwirrt zurück an den [[Start]].
 
-:: teaparty
 
+:: Start {"position":"275,200","size":"100,100"}
+<img src="images/grinsekatze1.jpg" />
+
+Es war ein sonniger Tag. Alice schlenderte gedankenverloren durch das Wunderland. Sie hatte sich ein wenig verirrt. Plötzlich materialisierte sich vor der alten Ruine am Eingang des Wunderlandes die Grinsekatze.
+
+Alice fragte sie: »Würdest Du mir bitte sagen, wie ich von hier aus weitergehen soll!«
+
+Die Grinsekatze grinste: »Das hängt zum großen Teil davon ab, wohin Du möchtest. Aber ich will Dir helfen: Geradeaus geht es zum [[Haus der Herzogin->Herzogin]], links zur [[Teeparty des verrückten Hutmachers->Teaparty]] und rechts triffst Du die [[kiffende Raupe->Raupe]] auf ihrem Pilz.«
+
+
+:: Teaparty {"position":"250,375","size":"100,100"}
 <img src="images/teaparty.jpg" />
 
 Alice erreichte die Teaparty vor dem Haus des verrückten Hutmachers. Dieser deklamierte gerade ein langes, dafür um so langweiligeres Gedicht.
 
-Alice hatte sehr schnell genug davon, also überlegte sie, ob sie doch die [[Raupe->raupe]] aufzusuchen oder gleich nach [[Hause->home]] gehen sollte.
+Alice hatte sehr schnell genug davon, also überlegte sie, ob sie doch die [[Raupe->Raupe]] aufzusuchen oder gleich nach [[Hause->Home]] gehen sollte.
 
-:: raupe
-
-<img src="images/caterpillar.jpg" />
-
-
-Die Raupe war zu bekifft, um ein vernünftiges Gespräch zu führen. Sie murmelte nur immerzu etwas vom »Reich der Ringe« und daß Alice dieses dringend besuchen müßte. Sie sagte noch: »Komm morgen wieder, dann erzähle ich Dir mehr«.
-
-Alice beschloß, daß sie für heute genug habe und ging nach [[Hause->grinsekatze2]].
-
-:: grinsekatze2
-
-<img src="images/grinsekatze2.jpg" />
-
-Auf dem Weg nach Hause materialisierte sich pötzlich die Grinsekatze wieder vor Alice. Sie grinste breit – so breit können nur Grinsekatzen grinsen – und fragte: »Na, war die Raupe wieder bekifft?«
-
-Alice hatte jetzt endgültig genug von ihrem heutigen Ausflug und [[verließ das Wunderland->home]].
-
-:: home
-
-<img src="images/home.jpg" />
-
-Zuhause traf Alice auf ihre Schwester und das weiße Kaninchen, mit denen sie zusammen noch gemütlich ein Kännchen Kaffee trank. So wurde es doch noch ein gelungengener Nachmittag.
-
-[[Noch einmal spielen->Start]]?
 
 :: StoryStylesheet [stylesheet]
 tw-story {
