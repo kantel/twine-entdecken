@@ -8,64 +8,290 @@ Smashing Pumpkins
   "format": "SugarCube",
   "format-version": "2.36.1",
   "start": "Start",
+  "tag-colors": {
+    "tagname": "green",
+    "green": "green"
+  },
   "zoom": 1
 }
 
 
-:: Bank {"position":"450,350","size":"100,100"}
-Norden: [[Vorplatz]]
-Westen: [[Hügel]]
-Osten:  [[Pförtnerhaus]]
+:: Attacke1 {"position":"450,25","size":"100,100"}
+<<if $hasPickaxe>>\
+[img[images/angriff1.jpg]]
+
+Emmy ergreift die Spitzhacke mit ihren Fäusten und schlägt wütend und kräftig auf den Priester ein. Nach einer kurzen, aber heftigen Gegenwehr [[bricht er schwer verletzt zusammen->Key]].
+<<else>>\
+[img[images/priest1.jpg]]
+
+Der Priester bemerkt Emmy und droht ihr mit der Grabschaufel. Emmy weiß, daß sie unbewaffnet keine Chance gegen den Irren hat und flieht weiter nach [[Osten zum Brunnen->Brunnen]].
+<</if>>\
 
 
-:: Brunnen {"position":"450,50","size":"100,100"}
-Osten: [[Urnengräber]]
-Westen: [[Gräberfeld]]
-Süden: [[Vorplatz]]
+:: Bank {"position":"600,500","size":"100,100"}
+[img[images/bench.jpg]]
 
 
-:: Gräberfeld {"position":"100,50","size":"100,100"}
-Osten: [[Brunnen]] 
-Süden: [[Pfad]]
+Emmy erreicht einen kleinen, versteckten Platz. Vor ihr steht eine alte, verwitterte Sitzbank.
 
-
-:: Hügel {"position":"100,350","size":"100,100"}
-
-
-
-:: Pfad {"position":"100,200","size":"100,100"}
-Norden: [[Gräberfeld]] 
-Osten:  [[Vorplatz]]
-Süden:  [[Hügel]]
-
-
-:: Pförtnerhaus {"position":"675,350","size":"100,100"}
-Norden: [[Tor]]
-Westen: [[Bank]]
-
-
-:: Start {"position":"300,100","size":"100,100"}
-Du wachst in einer alten Kapelle auf. Über dem Altar schwebt ein riesiger Kürbiskopf, der Dich an Deine Mission erinnert. Du mußt den wahnsinnigen Dorfpriester stoppen, der die als Halloween-Dekoration geschnitzten Kürbisköpfe zertrampelt.
-
-Du rappelst Dich auf und [[verläßt die Kapelle->Vorplatz]].
-
-
-:: Tor {"position":"675,200","size":"100,100"}
-Norden: [[Urnengräber]]
-Westen: [[Vorplatz]]
-Süden:  [[Pförtnerhaus]] 
-
-
-:: Urnengräber {"position":"675,50","size":"100,100"}
-Süden: [[Tor]]
-Westen: [[Brunnen]] 
+Sie kann auf den [[Vorplatz]] zurückkehren und von dort aus ihren Weg weitersuchen, oder sie kann im Westen einen kleinen [[Hügel]] hinaufsteigen, um sich von dort oben ein wenig Übersicht zu verschaffen. Allerdings kann sie im [[Osten->Pförtnerhaus]] durch die Bäume auch die Ruine eines alten Pförtnerhauses erkennen.
 
 
 
-:: Vorplatz {"position":"450,200","size":"100,100"}
-Du stehst auf dem Vorplatz neben der Leichenhalle. Die Tür der Kapelle schlägt mit einem lauten Knall hinter Dir zu. Am Nachthimmel leuchtet der Vollmond.
+:: Brunnen {"position":"600,175","size":"100,100"}
 
-Vor die steht eine [[alte, verwitterte Sitzbank->Bank]].
-Westen: [[Pfad]]
-Osten:  [[Tor]] 
-Norden: [[Brunnen]]
+[img[images/fountain1.jpg]]
+
+Vor Emmy eröffnet sich ein weiter Platz mit einem auch in der Nacht vor sich her plätschernden Brunnen an einer alten, verwitterten Friedhofsmauer. Neben dem Brunnen sieht sie eine Flasche, die mit einer floureszierend leuchtenden Flüssigkeit gefüllt ist.
+
+Im [[Osten->Urnengräber]] wie im <<if not $hasAttacked>>[[Westen->Gräberfeld]]<<else>>[[Westen->Gräberfeld leer]]<</if>> erkennt sie jeweils weitere Gräberfelder, im [[Süden->Vorplatz]] erreicht sie wieder den Platz neben der Krypta.
+
+
+
+:: Gräberfeld {"position":"250,175","size":"100,100"}
+[img[images/priest2.jpg]]
+
+Emmy sieht auf einem weiten Gräberfeld den wahnsinnigen Priester mit einer großen Schaufel auf die Halloween-Kürbisse einschlagen. Er starrt sie mit seinem irren Gesichsausdruck und glasigen Augen böse an.
+
+<<if $hasPickaxe>>\
+Emmy geht davon unbeeindruckt [[auf den Priester zu->Attacke1]].
+<<else>>\
+Emmy sieht ein, daß sie unbewaffner nichts gegen ihn ausrichten kann. Was soll sie tun? Soll sie sich an dem Priester vorbei zum [[Brunnen->Attacke1]] im Osten durchschlagen oder soll sie über den [[Pfad]] im Süden fliehen?
+<</if>>
+
+
+:: Gräberfeld leer {"position":"450,175","size":"100,100"}
+[img[images/graeberfeldleer.jpg]]
+
+Emmy steht wieder auf dem Gräberfeld, auf dem sie den Priester besiegt hat. Nun liegt es friedlich vor ihr. Im Süden sieht sie den schmalen, gewundenen [[Pfad]] und im Osten plätschert immer noch der [[Brunnen]] an der Friedhofsmauer, so als ob nichts gewesen wäre.
+
+
+:: Gräberfeld2 {"position":"950,175","size":"100,100"}
+[img[images/graeberfeld2.jpg]]
+
+Das Feld am Ende des Pfades wirkt noch älter. Es wird von uralten, verwitterten Bäumen umsäumt und nur noch wenige Gräber haben die Jahre überdauert.
+
+<<if not $hasBroomstick>><<linkappend "An einem der alten Bäume lehnt Emmys Hexenbesen, den sie schon die ganze Zeit vermißt hat. ">>Emmy nimmt den Besen an sich.<<set $hasBroomstick to true>><</linkappend>>
+
+Es gibt von hier aus keinen weiteren Weg als den Pfad, den sie gekommen war, zurück zum [[Gräberfeld->Urnengräber]] mit der Statue.
+<<else>>\
+Es gibt von hier aus keinen weiteren Weg als den Pfad, den sie gekommen war, zurück zum [[Gräberfeld->Urnengräber]] mit der Statue.
+<</if>>\
+
+
+
+
+:: Hügel {"position":"250,500","size":"100,100"}
+[img[images/hill2.jpg]]
+
+Von hier oben kann Emmy fast den gesamten Friedhof überblicken. Im Süden und Westen ist er von einer hohen Mauer begrenzt. Nördlich führt ein enger, gewundener [[Pfad]] zu einem weiten Gräberfeld, das vom Mond beschienen wird. Links davon kann sie einen Platz mit einem Brunnen erkennen, an dem sich ein weiteres Gräberfeld anschließt. Direkt unter ihr liegt die [[Kapelle mit der Krypta->Vorplatz]], dahinter das verfallene Pförtnerhaus und nördlich davon der Eingang zum Friedhof.
+
+
+
+
+:: Key {"position":"250,25","size":"100,100"}
+[img[images/dead7.jpg]]
+<<set $hasAttacked to true>>\
+<<set $hasKey to true>>\
+
+Sterbend bricht der Priester zusammen. Emmy nimmt dem kleinen Schlüssel an sich, den er am Gürtel trug.
+
+Nun hat sie die Wahl. Sie kann zurück zum [[Brunnen]] oder sie kann dem schmalen [[Pfad]] nach Süden folgen.
+
+
+:: MissionAccomplished {"position":"950,325","size":"100,100"}
+[img[images/missionacc8.jpg]]
+
+Mission erfüllt. Fröhlich schwingt sich Emmy auf ihren Hexenbesen und fliegt auf den Brocken zum Hexentanzplatz, begleitet von einigen jubelnden Kürbissen.
+
+!!!Ende
+
+
+:: Pfad {"position":"250,325","size":"100,100"}
+[img[images/path3.jpg]]
+
+Der gewundene Pfad schlängelt sich zwischen Gräbern und alten Bäumen durch den Friedhof. Er wird von Halloween-Kürbissen gesäumt, die Emmy kalt angrinsen. Sie kann von hier aus nach <<if not $hasAttacked>>[[Norden->Gräberfeld]]<<else>>[[Norden->Gräberfeld leer]]<</if>> zu einem Gräberfeld weitergehen, im [[Osten->Vorplatz]] den Vorplatz der Kapelle aufsuchen oder den Hügel im [[Süden->Hügel]] erklimmen.
+
+
+
+:: Pförtnerhaus {"position":"800,500","size":"100,100"}
+[img[images/house6.jpg]]
+
+Emmy steht vor dem ziemlich heruntergekommenen Pförtnerhaus. Die Tür zum Haus ist verschlossen. Links davon steht ein verfallener Schuppen auf Stelzen. In dem Gerümpel daneben liegt eine alte, rostige Gießkanne.
+
+[[Nördlich->Tor]] erkennt Emmy die Eingangspforte zum Friedhof. Sie kann aber auch einen [[Weg nach Westen->Vorplatz]] gehen.
+
+<<if $hasKey>>\
+Sie nimmt den Schlüssel, den sie dem toten Priester abgenommen hat, und öffnet die Tür. Sie betritt den [[Vorraum]] des Pförtnerhauses, der in einem rötlichen Licht schimmert.<</if>>
+
+
+:: Start {"position":"450,300","size":"100,100"}
+[img[images/chapel1.jpg]]
+
+Als Emmy ihre Augen aufschlug, sah sie in das Licht des Vollmondes, der durch ein Fenster in die Krypta schien. Sie lag auf dem Boden und um sie herum lagen viele, unterschiedlich große Halloween-Kürbisse, einige davon ziemlich derangiert.
+
+Der größte von ihnen sprach Emmy an: »Du mußt unsere Freunde vor dem wahnsinnigen Priester retten. Das ist Deine Mission. Mit dem Fortschritt der Mission wird auch Deine Erinnerung zurückkehren.«
+
+Emmy rappelt sich auf und [[verläßt die Kapelle->Vorplatz]].
+
+
+:: StoryAuthor [green] {"position":"50,200","size":"100,100"}
+Jörg Kantel
+
+
+:: StoryDisplayTitle [green] {"position":"50,350","size":"100,100"}
+🎃 Smashing Pumpkins 🎃
+
+
+:: StoryInit [green] {"position":"50,75","size":"100,100"}
+<<set $start to false>>
+<<set $gateOpen to false>>
+<<set $hasPickaxe to false>>
+<<set $hasPotion to false>>
+<<set $hasBroomstick to false>>
+<<set $hasAttacked to false>>
+<<set $hasKey to false>>
+
+
+:: Tor {"position":"800,325","size":"100,100"}
+<<if $gateOpen>>\
+[img[images/gate_open2.jpg]]
+
+Das Tor ist offen, der Weg ist [[frei->MissionAccomplished]]!
+<<else>>\
+[img[images/gate_closed2.jpg]]
+
+Das Eingangstor des Friedhofs ist fest verschlossen und es besitzt weder eine Klinke noch ein Schloß. Irgendwo muß es jedoch einen versteckten Mechanismus geben, mit dem das Tor aus der Ferne geöffnet werden kann.
+<</if>>\
+
+Im [[Norden->Urnengräber]] ist eine Statue im Mondlicht zu erkennen, im [[Süden->Pförtnerhaus]] liegt die Ruine des alten Pförtnerhauses und nach [[Westen->Vorplatz]] führt ein Weg zurück zum Vorplatz an der Krypta.
+
+
+
+:: Urnengräber {"position":"800,175","size":"100,100"}
+[img[images/monument1.jpg]]
+
+Dieses Feld scheint der älteste Teil des Friedhofs zu sein. Die Gräber sind völlig heruntergekommen und im Hintergrund erkennt man eine verfallene Kapelle<<if not $hasPickaxe>>, an deren Mauer eine <<linkappend "Spitzhacke lehnt. ">> Emmy nimmt die Hacke an sich und befestigt sie an ihrem Gürtel. Mit dieser Waffe fühlt sie sich nicht mehr so hilflos.<<set $hasPickaxe to true>><</linkappend>><</if>>
+
+In der Mitte steht eine relativ gut erhaltene, lebensgroße Statue eines Menschen mit Fledermausflügeln. Hinter der Statue lädt ein [[versteckter Pfad->Gräberfeld2]] zu weiteren Erkundungen dieses alten Friedhofteiles ein.
+
+Der Weg in den [[Süden->Tor]] führt zum alten Friedhofseingang mit seinem riesigen Tor, im [[Westen->Brunnen]] hört sie das Plätschern eines Brunnens.
+
+
+
+
+:: Vorplatz {"position":"600,325","size":"100,100"}
+[img[images/chapel3.jpg]]
+
+Emmy steht auf dem Vorplatz neben der Krypta. \
+<<if $start is false>>\
+Die Tür schlägt mit einem lauten Knall hinter ihr zu. \
+<<set $start to true>>\
+<</if>>\
+Am Nachthimmel leuchtet der Vollmond.
+
+Ein schmaler Pfad führt in den [[Süden->Bank]], nach [[Westen->Pfad]] geht ein weiterer, gewundener Pfad, im [[Osten->Tor]] kann sie hinter Nebelschleiern das Eingangstor zum Friedhof erkennen und im [[Norden->Brunnen]] hört sie das Plätschern eines Brunnens.
+
+
+
+:: Vorraum {"position":"950,500","size":"100,100"}
+[img[images/button1.jpg]]
+<<set $gateOpen to true>>\
+
+An der Wand des Vorraums erkennt Emmy einen riesigen Schalter. Als sie diesen umlegt, leuchtet an der Wand ein rotes Licht auf und ein Display unter dem Schalter verkündet:
+
+!!!Gate Open!
+
+Die kleine Hexe verläßt das Pförtnerhaus und schlägt hinter sich die Tür mit einem lauten Knall zu. Erst dann bemerkt sie, daß sie den Schlüssel zum Haus auf einem Tisch im Raum vergessen hat.<<set $hasKey to false>>
+
+Egal, Emmy macht sich auf dem Weg zum alten [[Friedhofstor->Tor]].
+
+
+:: StoryStylesheet [stylesheet]
+body, #ui-bar {
+  background-color: #000000;
+  font-family: "Gorgia", serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+h3 {
+  text-align: center;
+  color: #f91212;
+}
+
+a {
+  color: #fc9003;
+}
+
+a:hover {
+	color: #fc9003;
+}
+
+
+#ui-bar {
+  color: #ffffff;
+  /* max-width: 40%; */
+}
+
+#ui-bar-toggle {
+  /* display: none; */
+  color: #ffffff;
+}
+
+#ui-bar-toggle:hover {
+	background-color: #fc9003;
+	border-color: #eee;
+}
+
+#ui-bar-history {
+  /* display: normal; */
+  display: none;
+}
+
+#story-title {
+ font-size: 25px; 
+}
+
+#story-author {
+ font-size: 15px; 
+}
+
+
+#ui-dialog-body {
+	background-color: #000000;
+	border: 1px solid #444;
+	text-align: left;
+	line-height: 1.5;
+	padding: 1em;
+}
+#ui-dialog-titlebar {
+	background-color: #fc9003;
+	min-height: 24px;
+}
+#ui-dialog-title {
+	margin: 0;
+	padding: 0.2em 3.5em 0.2em 0.5em;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: none;
+}
+
+#menu li a {
+	display: block;
+	padding: 0.25em 0.75em;
+	border: 1px solid transparent;
+	color: #ffffff;
+	text-transform: none;
+}
+
+#menu li a:hover {
+	background-color: #fc9003;
+	border-color: #eee;
+}
+
+
+img {
+ 	max-width: 100%;
+	max-height: 100%;
+}
