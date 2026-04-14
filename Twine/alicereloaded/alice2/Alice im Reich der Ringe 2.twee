@@ -1,0 +1,124 @@
+:: StoryTitle
+Alice im Reich der Ringe 1
+
+
+:: StoryData
+{
+  "ifid": "1e235287-0338-4142-9177-4c21f4e0e30f",
+  "format": "Chapbook",
+  "format-version": "2.3.0",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Baby {"position":"500,75","size":"100,100"}
+{embed image: "images/ferkel.jpg", alt: "Alice und das Ferkel"}
+
+Alice verließ das Haus. Das Plärren des Babys veränderte sich langsam zu einem Grunzen und Quieken. Als Alice nachsah, merkte sie, daß sie ein kleines Ferkelchen im Arm hielt.
+
+Erschreckt setzte Alice das Ferkelchen ab. Es lief davon. Und Alice ging verwirrt zurück an den {restart link, label: "Start"}.
+
+
+:: Bad_endig {"position":"500,375","size":"100,100"}
+{embed image: "images/grinsi1.jpg", alt: "Alice und die Grinsekatze 2"}
+
+Auf dem Weg nach Hause materialisierte sich pötzlich die Grinsekatze wieder vor Alice. Sie grinste breit -- so breit können nur Grinsekatzen grinsen -- und fragte: »Na, war die Raupe wieder bekifft?«
+
+Alice hatte jetzt endgültig genug von ihrem heutigen Ausflug und verließ das Wunderland.
+
+
+:: Flamingo {"position":"900,375","size":"100,100"}
+{embed image: "images/flamingo.jpg", alt: "Alice mit rosa Flamingo"}
+
+Alice dachte, daß ihr dies alles zu dumm sei. Außerdem wußte sie nicht, wieso sie auf einmal einen rosa Flamingo im Arm hatte. 
+
+Sie überlegte, ob sie doch noch die [[bekiffte Raupe->Raupe]] besuchen oder gleich [[nach Hause gehen->Home]] solle.
+
+
+:: Haselmaus {"position":"700,225","size":"100,100"}
+{embed image: "images/haselmaus.jpg", alt: "Hazel D. Mouse"}
+
+»Ich fand es aber <span style="color:green; font-size:50%;">klein</span> viel schöner.«
+
+***
+
+Plötzlich hoppelte das [[weiße Kaninchen->Kaninchen]] in die Szene …
+
+
+:: Herzogin {"position":"300,75","size":"100,100"}
+{embed image: "images/herzogin.jpg", alt: "Alice im Haus der Herzogin"}
+
+Im Haus der Herzogin herrschte Chaos. Erst schlug die Köchin mit einer Pfanne nach Alice, dann drückte die Herzogin ihr ein plärrendes [[Baby->Baby]] in den Arm.
+
+
+:: Home {"position":"900,525","size":"100,100"}
+{embed image: "images/home.jpg", alt: "Alice ist wieder zu Hause"}
+
+Zuhause traf Alice ihre Freunde wieder, das weiße Kaninchen und den großen, grünen Elephanten, mit mit denen sie noch gemütlich ein Kännchen Kaffee trank. (Sie hatte genug von Teepartys.)
+
+***
+
+So wurde es doch noch ein gelungener Nachmittag.
+
+
+:: Hutmacher {"position":"500,225","size":"100,100"}
+{embed image: "images/hutmacher2.jpg", alt: "Der Hutmacher schwadroniert"}
+
+[align center]
+
+»Macht Wunderland wieder <span style="color:red; font-size: 300%;">groß!</span>
+[continue]
+
+Die Haselmaus entgegnete [[schüchtern->Haselmaus]] …
+
+
+:: Kaninchen {"position":"900,225","size":"100,100"}
+{embed image: "images/rabbit.jpg", alt: "Weißes Kaninchen mit Uhr"}
+
+… schaute erschreckt auf seine Uhr und jammerte: »Ich komme wieder **viel** zu spät …«
+
+Sprach's und hoppelte [[aufgeregt davon->Flamingo]].
+
+
+
+
+:: Raupe {"position":"300,375","size":"100,100"}
+{embed image: "images/raupe.jpg", alt: "Alice und die Raupe"}
+
+Die Raupe war zu bekifft, um ein vernünftiges Gespräch zu führen. Sie murmelte nur immerzu etwas vom »Reich der Ringe« und daß Alice dieses dringend besuchen müsste. Sie sagte noch: »Komm morgen wieder, dann erzähle ich Dir mehr«.
+
+Alice beschloß, daß sie für heute genug habe und [[ging nach Hause->Bad_endig]]
+
+
+:: Start {"position":"100,75","size":"100,100"}
+config.style.page.verticalAlign: "top"
+config.style.page.link.font: "18 bold none"
+config.style.page.link.color: "teal-4"
+config.style.page.link.active.color: "teal-4"
+config.style.dark.page.link.font: "18 bold none"
+config.style.dark.page.link.color: "orange-3"
+config.style.dark.page.link.active.color: "orange-3"
+config.style.page.footer.link.font: "16 italic none"
+config.style.page.footer.link.active.font: "16 italic none"
+config.style.page.footer.link.active.color: "teal-4"
+config.style.dark.page.footer.link.active.color: "orange-3"
+config.style.page.footer.font: "16 italic"
+config.footer.left: "Alice im Reich der Ringe"
+--
+
+{embed image: "images/start.jpg", alt: "Alice und die Grinsekatze"}
+
+Es war ein sonniger Tag. Alice schlenderte gedankenverloren durch das Wunderland. Sie hatte sich ein wenig verirrt. Plötzlich materialisierte sich auf dem Dach der alten Ruine am Eingang des Wunderlandes die Grinsekatze.
+
+Alice fragte sie: »Würdest Du mir bitte sagen, wie ich von hier aus weitergehen soll!«
+
+Die Grinsekatze grinste, wie das Grinsekatzen nun mal so tun: »Das hängt zum großen Teil davon ab, wohin Du möchtest. Aber ich will Dir helfen: Geradeaus geht es zum [[Haus der Herzogin->Herzogin]], links zur [[Teeparty des verrückten Hutmachers->Teeparty]] und rechts triffst Du die [[kiffende Raupe auf ihrem Pilz->Raupe]].«
+
+
+:: Teeparty {"position":"300,225","size":"100,100"}
+{embed image: "images/hutmacher.jpg", alt: "Alice und die Teeparty"}
+
+Alice erreichte die Teeparty vor dem Haus des verrückten Hutmachers. Dieser deklamierte gerade ein langes, dafür um so langweiligeres Gedicht, stand dann aber auf, hob seine Teetasse und begann [[lautstark zu schwadronieren->Hutmacher]].
+
+
