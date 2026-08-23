@@ -1,0 +1,96 @@
+:: StoryTitle
+Imagemap Harlowe
+
+
+:: StoryData
+{
+  "ifid": "CA50B19D-00D2-418A-BE5A-BAE2ADD8CBC0",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Ballon {"position":"100,375","size":"100,100"}
+### Der rote Luftballon
+
+<span style="font-size: 500%">🎈</span>
+
+Ein roter Luftballon am Himmel.
+Ich habe nie einen gekriegt.
+Ich bin ein Kind reeller Leute,
+Bei denen alles etwas wiegt …
+
+Zurück an den [[Start]].
+
+
+:: Buch {"position":"450,300","size":"100,100"}
+### Das geheimnisvolle Buch
+
+<span style="font-size: 500%">📖</span>
+
+Auf dem Tisch liegt ein aufgeschlagenes Buch mit dem Titel »Wunder der Natur«. Du würdest es gerne lesen. Doch: So viel zu lesen, so wenig Zeit …
+
+Zurück an den [[Start]].
+
+
+:: Dark {"position":"450,450","size":"100,100"}
+### Der Wunderland-Debattierclub
+
+{<img src="images/diskussion_dark.jpg" usemap="#diskussion_dark">
+<map name="diskussion_dark">
+(link:'<area shape="rect" coords="2,80,36,140" />')[
+        (goto:"Start")
+]
+</map>}
+
+
+:: Grinsekatze {"position":"300,375","size":"100,100"}
+### Die Grinsekatze
+
+<span style="font-size: 500%">🐈</span>
+
+Sie liegt hier nur dumm rum und hat keinen Einfluß auf die Geschichte.
+
+
+Zurück an den [[Start]].
+
+
+:: Start {"position":"200,200","size":"100,100"}
+### Der Wunderland-Debattierclub
+
+{<img src="images/diskussion.jpg" usemap="#diskussion">
+<map name="diskussion">
+(link:'<area shape="rect" coords="360,36,384,66" />')[
+        (goto:"Ballon")
+]
+(link:'<area shape="rect" coords="520,145,560,175" />')[
+        (goto:"Grinsekatze")
+]
+(link:'<area shape="rect" coords="160,160,220,185" />')[
+        (goto:"Buch")
+]
+(link:'<area shape="rect" coords="2,80,36,140" />')[
+        (goto:"Dark")
+]
+</map>}
+
+
+:: StoryStylesheet [stylesheet]
+tw-icon[alt="Undo"], tw-icon[alt="Redo"] {
+  display: none;
+}
+
+tw-link {
+  color: orange;
+}
+
+.visited {
+  color: orange;
+  
+}
+
+.visited:hover {
+  color: orange;
+}

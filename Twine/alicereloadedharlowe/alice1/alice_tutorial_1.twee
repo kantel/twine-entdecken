@@ -1,0 +1,100 @@
+:: StoryTitle
+Alice Tutorial 1
+
+
+:: StoryData
+{
+  "ifid": "3344795E-5919-42E5-B693-E43BA87A0DB5",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Baby {"position":"500,100","size":"100,100"}
+<img src="images/ferkel.jpg" alt="" />
+
+Alice verließ das Haus. Das Plärren des Babys veränderte sich langsam zu einem Grunzen und Quieken. Als Alice nachsah, merkte sie, daß sie ein kleines Ferkelchen im Arm hielt.
+
+Erschreckt setzte Alice das Ferkelchen ab. Es lief davon. Und Alice ging verwirrt zurück an den [[Anfang der Geschichte->Start]].
+
+
+:: Bad Endig {"position":"500,550","size":"100,100"}
+<img src="images/grinsi1.jpg" alt="" />
+
+Auf dem Weg nach Hause materialisierte sich pötzlich die Grinsekatze wieder vor Alice. Sie grinste breit – so breit können nur Grinsekatzen grinsen – und fragte: »Na, war die Raupe wieder bekifft?«
+
+Alice hatte jetzt endgültig genug von ihrem heutigen Ausflug und verließ das Wunderland.
+
+
+:: Herzogin {"position":"300,200","size":"100,100"}
+<img src="images/herzogin.jpg" alt="" />
+
+Im Haus der Herzogin herrschte Chaos. Erst schlug die Köchin mit einer Pfanne nach Alice, dann drückte die Herzogin ihr ein plärrendes [[Baby->Baby]] in den Arm.
+
+
+:: Home {"position":"500,350","size":"100,100"}
+<img src="images/home.jpg" alt="" />
+
+Zuhause traf Alice ihre Freunde, das weiße Kaninchen und den großen Elephanten, mit mit denen sie noch gemütlich ein Kännchen Kaffee trank. So wurde es doch noch ein gelungengener Nachmittag.
+
+
+:: Raupe {"position":"300,550","size":"100,100"}
+<img src="images/raupe.jpg" alt="" />
+
+Die Raupe war zu bekifft, um ein vernünftiges Gespräch zu führen. Sie murmelte nur immerzu etwas vom »Reich der Ringe« und daß Alice dieses dringend besuchen müsste. 
+
+Sie sagte noch: »Komm morgen wieder, dann erzähle ich Dir mehr«.
+
+Alice beschloß, daß sie für heute genug habe und [[ging nach Hause->Bad Endig]].
+
+
+:: Start {"position":"100,100","size":"100,100"}
+<img src="images/start.jpg" alt="" />
+
+Es war ein sonniger Tag. Alice schlenderte gedankenverloren durch das Wunderland. Sie hatte sich ein wenig verirrt. Plötzlich materialisierte sich auf dem Dach der alten Ruine am Eingang des Wunderlandes die Grinsekatze.
+
+Alice fragte sie: »Würdest Du mir bitte sagen, wie ich von hier aus weitergehen soll!«
+
+Die Grinsekatze grinste, wie das Grinsekatzen nun mal so tun: »Das hängt zum großen Teil davon ab, wohin Du möchtest. Aber ich will Dir helfen: Geradeaus geht es zum [[Haus der Herzogin->Herzogin]], links zur [[Teeparty->Teeparty]] des verrückten Hutmachers und rechts triffst Du die [[kiffende Raupe auf ihrem Pilz->Raupe]].«
+
+
+:: Teeparty {"position":"300,350","size":"100,100"}
+<img src="images/hutmacher.jpg" alt="" />
+
+Alice erreichte die Teaparty vor dem Haus des verrückten Hutmachers. Dieser deklamierte gerade ein langes, dafür um so langweiligeres Gedicht.
+
+Alice hatte sehr schnell genug davon, also überlegte sie, ob sie doch die [[Raupe->Raupe]] aufzusuchen oder gleich [[nach Hause gehen->Home]] sollte.
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+  	background-color: #1a1a1a;
+  	color: #f0f0f0;
+}
+
+tw-link, tw-ancient-link {
+  	color: #ff9900;
+  	font-weight: bold;
+}
+
+tw-link:hover {
+  	color: #ff9900;
+}
+
+tw-link.visited {
+  	color: #ff9900;
+}
+
+tw-link.visited:hover {
+  	color: #ff9900;
+}
+
+.enchantment-link:hover, tw-link:hover {
+ 	color: #ff9900;
+}
+
+tw-sidebar {
+	display: none;
+}
