@@ -12,6 +12,7 @@
 <tw-storydata name="Alice Tutorial 1" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="3344795E-5919-42E5-B693-E43BA87A0DB5" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
   	background-color: #1a1a1a;
   	color: #f0f0f0;
+  	font-size: clamp(1.0em, 2.0vw, 1.75em);
 }
 
 tw-link, tw-ancient-link {
@@ -37,6 +38,11 @@ tw-link.visited:hover {
 
 tw-sidebar {
 	display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">&lt;img src=&quot;images/start.jpg&quot; alt=&quot;&quot; /&gt;
 
 Es war ein sonniger Tag. Alice schlenderte gedankenverloren durch das Wunderland. Sie hatte sich ein wenig verirrt. Plötzlich materialisierte sich auf dem Dach der alten Ruine am Eingang des Wunderlandes die Grinsekatze.
@@ -61,11 +67,19 @@ Alice verließ das Haus. Das Plärren des Babys veränderte sich langsam zu eine
 
 Erschreckt setzte Alice das Ferkelchen ab. Es lief davon. Und Alice ging verwirrt zurück an den [[Anfang der Geschichte-&gt;Start]].</tw-passagedata><tw-passagedata pid="6" name="Home" tags="" position="500,350" size="100,100">&lt;img src=&quot;images/home.jpg&quot; alt=&quot;&quot; /&gt;
 
-Zuhause traf Alice ihre Freunde, das weiße Kaninchen und den großen Elephanten, mit mit denen sie noch gemütlich ein Kännchen Kaffee trank. So wurde es doch noch ein gelungengener Nachmittag.</tw-passagedata><tw-passagedata pid="7" name="Bad Ending" tags="" position="500,550" size="100,100">&lt;img src=&quot;images/grinsi1.jpg&quot; alt=&quot;&quot; /&gt;
+Zuhause traf Alice ihre Freunde, das weiße Kaninchen und den großen Elephanten, mit mit denen sie noch gemütlich ein Kännchen Kaffee trank. So wurde es doch noch ein gelungengener Nachmittag.
+
+---
+
+[[Noch einmal spielen?-&gt;Start]]</tw-passagedata><tw-passagedata pid="7" name="Bad Ending" tags="" position="500,550" size="100,100">&lt;img src=&quot;images/grinsi1.jpg&quot; alt=&quot;&quot; /&gt;
 
 Auf dem Weg nach Hause materialisierte sich pötzlich die Grinsekatze wieder vor Alice. Sie grinste breit – so breit können nur Grinsekatzen grinsen – und fragte: »Na, war die Raupe wieder bekifft?«
 
-Alice hatte jetzt endgültig genug von ihrem heutigen Ausflug und verließ das Wunderland.</tw-passagedata></tw-storydata>
+Alice hatte jetzt endgültig genug von ihrem heutigen Ausflug und verließ das Wunderland.
+
+---
+
+[[Noch einmal spielen?-&gt;Start]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

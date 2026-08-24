@@ -27,6 +27,10 @@ Auf dem Weg nach Hause materialisierte sich pötzlich die Grinsekatze wieder vor
 
 Alice hatte jetzt endgültig genug von ihrem heutigen Ausflug und verließ das Wunderland.
 
+---
+
+[[Noch einmal spielen?->Start]]
+
 
 :: Herzogin {"position":"300,200","size":"100,100"}
 <img src="images/herzogin.jpg" alt="" />
@@ -38,6 +42,10 @@ Im Haus der Herzogin herrschte Chaos. Erst schlug die Köchin mit einer Pfanne n
 <img src="images/home.jpg" alt="" />
 
 Zuhause traf Alice ihre Freunde, das weiße Kaninchen und den großen Elephanten, mit mit denen sie noch gemütlich ein Kännchen Kaffee trank. So wurde es doch noch ein gelungengener Nachmittag.
+
+---
+
+[[Noch einmal spielen?->Start]]
 
 
 :: Raupe {"position":"300,550","size":"100,100"}
@@ -72,6 +80,7 @@ Alice hatte sehr schnell genug davon, also überlegte sie, ob sie doch die [[Rau
 tw-story {
   	background-color: #1a1a1a;
   	color: #f0f0f0;
+  	font-size: clamp(1.0em, 2.0vw, 1.75em);
 }
 
 tw-link, tw-ancient-link {
@@ -97,4 +106,9 @@ tw-link.visited:hover {
 
 tw-sidebar {
 	display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

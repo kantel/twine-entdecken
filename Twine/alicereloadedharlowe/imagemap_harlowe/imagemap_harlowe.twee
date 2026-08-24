@@ -78,6 +78,13 @@ Zurück an den [[Start]].
 
 
 :: StoryStylesheet [stylesheet]
+tw-story {
+  	background-color: #1a1a1a;
+  	color: #f0f0f0;
+  	font-size: clamp(1.0em, 2.0vw, 1.75em);
+}
+
+
 tw-icon[alt="Undo"], tw-icon[alt="Redo"] {
   display: none;
 }
@@ -94,3 +101,9 @@ tw-link {
 .visited:hover {
   color: orange;
 }
+
+/*
+img {
+  max-width: 100%;
+  height: auto;
+} */
