@@ -1,0 +1,131 @@
+:: StoryTitle
+Alice Tutorial 2
+
+
+:: StoryData
+{
+  "ifid": "2ECBE92F-F020-4C41-B31B-6DA642402BD2",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Flamingo {"position":"550,425","size":"100,100"}
+<img src="images/flamingo.jpg" alt="Flamingo" />
+
+Alice dachte, daß ihr dies zu dumm sei. Außerdem wusste sie nicht, wieso sie auf einmal einen Flamingo im Arm hatte. Sie überlegte, ob sie ihren [[geheimnisvollen, blauen Freund->Raupe]] besuchen oder mit der [[Grinsekatze->Grinsekatze]] plaudern solle.
+
+
+:: Grinsekatze {"position":"400,550","size":"100,100"}
+<img src="images/grinsi2.jpg" alt="Grinsekatze" />
+
+Die Grinsekatze materialisierte sich unverhofft in einer Astgabel, sagte »Schön, daß Du mich mal wieder besuchen willst« und verschwand ganz langsam wieder …
+
+Das ist das Ende.
+
+
+Alles auf [[Anfang->Start]]?
+
+
+:: Haselmaus {"position":"400,300","size":"100,100"}
+{
+(set: $green to (color: "#7fff00"))
+(set: $small to (css: "font-size: 12px"))}<img src="images/haselmaus.jpg" alt="Haselmaus" />
+
+==><==
+»Ich fand es aber $small[$green[klein]] viel schöner.«
+<==
+
+
+Plötzlich hoppelte aufgeregt das [[weiße Kaninchen->Kaninchen]] in die Szene …
+
+
+
+
+:: Hutmacher {"position":"250,300","size":"100,100"}
+{
+(set: $rumble to (text-style: "rumble"))
+(set: $red to (color: "red"))
+(set: $big to (css: "font-size: 60px"))}<img src="images/hutmacher2.jpg" alt="Hutmacher" />
+
+==><==
+»Macht Wunderland wieder $big[$red[$rumble[groß]]]!«
+<==
+
+Die Haselmaus entgegnete [[leise und schüchtern->Haselmaus]] …
+
+
+:: Kaninchen {"position":"550,300","size":"100,100"}
+<img src="images/kaninchen.jpg" alt="Weißes Kaninchen" />
+
+==><==
+»Ich komme viel zu spät!«
+<==
+
+Sprach's und sprang ganz aufgeregt und dabei laut »zu spät, zu spät …« jammernd wieder davon.
+
+[[Weiter->Flamingo]] …
+
+
+:: Raupe {"position":"550,550","size":"100,100"}
+<img src="images/raupe2.jpg" alt="Raupe" />
+
+Rauch … Rauch … Rauch …
+
+Doch die Raupe war zu bekifft für ein vernünftiges Gespräch. Alice verabschiedete sich und versuchte dann doch, die [[Grinsekatze->Grinsekatze]] zu finden.
+
+
+:: Start {"position":"100,100","size":"100,100"}
+### Die Geschichte beginnt …
+
+<img src="images/rabbit2.jpg" alt"Das weiße Kaninchen im Bau" />
+
+Wie jeden Donnerstag ging Alice auf die Teeparty zu ihren Freunden, dem verrückten Hutmacher, dem Märzhasen und der Haselmaus. Sie war etwas mißmutig gestimmt, wußte aber nicht warum.
+
+[[Weiter|Tisch]] …
+
+
+:: Tisch {"position":"100,300","size":"100,100"}
+<img src="images/teeparty2.jpg" alt="Teeparty" />
+
+Im Garten vor dem Laden des Hutmachers saßen alle schon um einen Tisch herum. Der Hutmacher hob seine Teetasse, prostete allen zu und [[schwadronierte->Hutmacher]] …
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+  	background-color: #1a1a1a;
+  	color: #f0f0f0;
+  	font-size: clamp(1.0em, 2.0vw, 1.75em);
+}
+
+tw-link, tw-ancient-link {
+  	color: #ff9900;
+  	font-weight: bold;
+}
+
+tw-link:hover {
+  	color: #ff9900;
+}
+
+tw-link.visited {
+  	color: #ff9900;
+}
+
+tw-link.visited:hover {
+  	color: #ff9900;
+}
+
+.enchantment-link:hover, tw-link:hover {
+ 	color: #ff9900;
+}
+
+tw-sidebar {
+	display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
