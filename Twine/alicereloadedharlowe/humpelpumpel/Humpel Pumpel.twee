@@ -1,0 +1,108 @@
+:: StoryTitle
+Humpel Pumpel
+
+
+:: StoryData
+{
+  "ifid": "163F6A9F-AF05-4191-AFE5-9E49105FE849",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Biergarten {"position":"400,225","size":"100,100"}
+<img src="images/hutmacher02.jpg" alt="Im Biergarten" />
+
+Hier saßen seltsamerweise wieder ihre alten Freunde, der Märzhase, der verrückte Hutmacher und die Haselmaus an einem Tisch und begrüßten sie lautstark. Alice war verwirrt, [[blieb aber noch eine Weile->Haselmaus]].
+
+
+:: Haselmaus {"position":"550,225","size":"100,100"}
+<img src="images/haselmaus02.jpg" alt="Haselmaus" />
+
+Als der Hutmacher und der Märzhase jedoch anfingen, die Haselmaus kopfüber in den Teetopf zu stülpen, hatte sie genug. Sie beschloß, die Party zu verlassen.
+
+Hier ist die Geschichte zu Ende.
+
+[[Noch einmal spielen->Start]]?
+
+
+:: Humpel Pumpel {"position":"100,225","size":"100,100"}
+<img src="images/humpelpumpel02.jpg" alt="Humpel Pumpel" />
+
+»Du mußt Humpel Pumpel sein« sagte Alice, nur um etwas freundliches zu sagen.
+
+Humpel Pumpel: (link: "»Warum?«")[»Warum?«
+
+»Weil Du wie ein Humpel Pumpel aussiehst« antwortete Alice.
+
+Humpel Pumpel schwieg eine Weile beleidigt.
+
+(link: "»Und wie heißt Du?«")[»Und wie heißt Du?«
+
+»Alice«, antwortete Alice.
+
+»[[Du siehst aber gar nicht wie Alice aus->Humpel Pumpel 2]]« sagte Humpel Pumpel schon wieder fröhlicher.]]
+
+
+:: Humpel Pumpel 2 {"position":"250,225","size":"100,100"}
+<img src="images/humpelpumpel03.jpg" alt="Humpel Pumpel" />
+
+Darauf wußte Alice keine Antwort. »Wenn Du weiter so auf der Mauer zappelst, wirst Du noch herunterfallen« sagte sie schließlich, nur um überhaupt etwas zu sagen.
+
+Humpel Pumpel: (link: "»Nein!«")[»Nein!«
+
+Alice: (link: "»Doch!«")[»Doch!«
+
+Humpel Pumpel: »Oh!«
+
+Alice schlich sich an dem heruntergefallenen Humpel Pumpel vorbei und ging weiter in das Dorf. In der Mitte des Dorfes unter einem großen Baum war ein [[Biergarten->Biergarten]].]]
+
+
+:: Start {"position":"100,100","size":"100,100"}
+### Alice und Humpel Pumpel
+
+<img src="images/humpelpumpel01.jpg" alt="Humpel Pumpel" />
+
+Alice strolchte mal wieder durch das Wunderland und kam in ein Dorf mit einer großen, steineren Mauer.
+
+Auf dieser Mauer saß ein seltsames Wesen und [[grinste Alice breit an->Humpel Pumpel]].
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-size: clamp(1.0em, 2.0vw, 1.75em);
+}
+
+tw-link, tw-ancient-link {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+tw-link:hover {
+    color: #ff9900;
+}
+
+tw-link.visited {
+    color: #ff9900;
+}
+
+tw-link.visited:hover {
+    color: #ff9900;
+}
+
+.enchantment-link:hover, tw-link:hover {
+    color: #ff9900;
+}
+
+tw-sidebar {
+    display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
