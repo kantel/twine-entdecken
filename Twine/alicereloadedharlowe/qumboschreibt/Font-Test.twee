@@ -1,0 +1,91 @@
+:: StoryTitle
+Font-Test
+
+
+:: StoryData
+{
+  "ifid": "C502042A-4245-43D3-BF61-51DCAC8213E6",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Start {"position":"100,100","size":"100,100"}
+# Qumbo schreibt (schön)
+
+<img src="images/qumbo.jpg" alt="qumbo" />
+
+Alice besuchte an einem schönen Herbstnachmittag mal wieder ihre alten Freunde, *Rudi Rabbit*, das weiße Kaninchen, und *Qumbo*, den schlauen Elephanten.
+
+Qumbo schrieb gerade langsam und mit großer Sorgfalt einen kalligraphischen Text in ein großes Notizbuch, während das Kaninchen ungeduldig auf seine riesige Taschenuhr schaute und jammerte: »Oje, oje, in einer halben Stunde ist **Redaktionsschluss**, wir kommen zu spät.
+
+[[Zur Zeitschleife->Start]].
+
+
+:: StoryStylesheet [stylesheet]
+@font-face {
+  font-family: Berkshire; /* set name */
+  src: url(fonts/BerkshireSwash-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Regular.ttf) format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Italic.ttf) format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+tw-story {
+  	background-color: #1a1a1a;
+    color: #f0f0f0;
+  	font-family: EBGaramond, serif;
+  	font-size: clamp(1.2em, 2.0vw, 1.75em);
+}
+
+tw-link, tw-ancient-link {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+tw-link:hover {
+    color: #ff9900;
+}
+
+tw-link.visited {
+    color: #ff9900;
+}
+
+tw-link.visited:hover {
+    color: #ff9900;
+}
+
+.enchantment-link:hover, tw-link:hover {
+    color: #ff9900;
+}
+
+tw-sidebar {
+    display: none;
+}
+
+h1 {
+  font-family: Berkshire, serif;
+  font-size: clamp(1.8em, 2.0vw, 2.75em);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
