@@ -1,0 +1,131 @@
+:: StoryTitle
+Alice Tutorial 4
+
+
+:: StoryData
+{
+  "ifid": "3857D6B0-FBA8-4358-8B1C-387376BDC771",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Init",
+  "zoom": 1
+}
+
+
+:: Bibiothek {"position":"250,375","size":"100,100"}
+<img src="images/library.jpg" alt="Bibliothek" />
+
+Hinter der Tür lag eine alte, verstaubte Bibliothek mit vielen seltsamen Büchern voller geheimnisvoller Abbildungen und mythischer Erzählungen. Alice wäre gerne geblieben und hätte ein wenig die alten Schwarten erkundet. Doch das ist eine andere Geschichte, unsere ist hier zu Ende.
+
+[[Noch einmal spielen->Init]]?
+
+
+:: Blumentopf {"position":"525,225","size":"100,100"}
+(if: $isKey is "Blumentopf")[(go-to: "Schlüssel gefunden")]
+(else:)[<img src="images/mansion_closed.jpg" alt="Old Mansion" />
+
+Unter dem Blumentopf krabbelten nur ein paar Insekten, ansonsten war nichts zu sehen.
+
+Alice [[suchte weiter->Start]].]
+
+
+:: Fußmatte {"position":"400,225","size":"100,100"}
+(if: $isKey is "Fußmatte")[(go-to: "Schlüssel gefunden")]
+(else:)[<img src="images/mansion_closed.jpg" alt="Old Mansion" />
+
+Unter der Fußmatte lag nichts.
+
+Alice [[suchte weiter->Start]].]
+
+
+:: Init {"position":"100,100","size":"100,100"}
+{(set: $hasKey to false)
+(set: $isKey to (either: "Fußmatte", "Blumentopf", "Krug"))
+}
+
+(go-to: "Start")
+
+
+:: Krug {"position":"275,225","size":"100,100"}
+(if: $isKey is "Krug")[(go-to: "Schlüssel gefunden")]
+(else:)[<img src="images/mansion_closed.jpg" alt="Old Mansion" />
+
+Im Krug lag nichts als nur ein paar abgestorbene Blätter.
+
+Alice [[suchte weiter->Start]].]
+
+
+:: Schlüssel gefunden {"position":"400,375","size":"100,100"}
+<img src="images/mansion_open.jpg" alt="Türe offen" />
+
+Der Schlüssel lag (if: $isKey is "Fußmatte")[unter der] (else:)[im] $isKey. Alice öffnete die Türe und ging ins [[Haus->Bibiothek]], während die Grinsekatze sich verflüchtigte.
+
+
+:: Start {"position":"400,100","size":"100,100"}
+<img src="images/mansion_closed.jpg" alt="Old Mansion" />
+
+Alice war wieder einmal auf einer Entdeckungstour im Wunderland. Sie fand ein verlassenes und ziemlich heruntergekommenes Herrenhaus. Alice wollte es gerne erkunden, doch die Türe war verschlossen.
+
+Plötzlich materialisierte sich die Grinsekatze auf dem Dach des Hauses neben dem schrägstehenden Kamin. Sie meinte: »Ein Tipp von mir: Manche Leute verstecken ihre Schlüssel unter der [[Fußmatte->Fußmatte]] oder im [[Blumentopf->Blumentopf]], manche aber auch im [[Krug neben der Tür->Krug]].
+
+
+
+:: StoryStylesheet [stylesheet]
+@font-face {
+  font-family: Berkshire; /* set name */
+  src: url(fonts/BerkshireSwash-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Regular.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Italic.ttf) format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+tw-story {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: EBGaramond, serif;
+    font-size: clamp(1.2em, 2.0vw, 1.75em);
+}
+h1 {
+  font-family: Berkshire, serif;
+  font-size: clamp(1.8em, 2.0vw, 2.75em);
+}
+tw-link, tw-ancient-link {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+tw-link:hover {
+    color: #ff9900;
+}
+
+tw-link.visited {
+    color: #ff9900;
+}
+
+tw-link.visited:hover {
+    color: #ff9900;
+}
+
+.enchantment-link:hover, tw-link:hover {
+    color: #ff9900;
+}
+
+tw-sidebar {
+    display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
