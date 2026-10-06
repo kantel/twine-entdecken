@@ -15,23 +15,20 @@ Twine kann als [Webapp](http://twinery.org/2/#!/stories) genutzt werden. Da ich 
 
 Wenn Twine gestartet wird, erscheint zuerst ein Bildschirm, der die bisher mit Twine erstellten Geschichten anzeigt oder noch leer ist. Mit einem Klick auf den grünen rechten Button wird eine neue Geschichte erzeugt. Ich nenne sie »Nachtleben« (der Name einer Twine-Story kann jederzeit geändert werden).
 
-<<<<<<< Local Changes
->>>>>>> External Changes
-=======
 Es öffent sich der Editor, er sieht so aus:
 
 ![Screenshot](images/nachtleben01.jpg)
 
 Wenn Ihr mit der Maus über das Kästchen in der Mitte fahrt (im Twine-Jargon »Passage« genannt), könnt Ihr auf einen Stift klicken und die Passage editieren. Gebt einfach folgenden Text (mit den doppelten eckigen Klammern!) dort ein:
 
-~~~
+```
 Es geschah in einer dunklen und stürmischen Nacht. Es schneite dicke Flocken
 und das Radio spielte alte Swing-Nummern.
 
 Plötzlich tauchte im Licht der Scheinwerferkegel ein Wegweiser auf.
 Rechts ging es nach [[Dinkelsbach]] und links nach [[Lüdenscheid]]. Geradeaus
 ging es weiter nach [[Oberhausen]].
-~~~
+```
 
 Außerdem könnt Ihr oben, wo noch »Unbenannter Absatz« steht, eine Überschrift für Eure Passage eingeben. Ich habe sie einfach start genannt.
 
@@ -47,31 +44,31 @@ Ich mag den Dark-Mode (also weiße Schrift auf schwarzem Grund) nicht. Er beleid
 
 Im Editor links unten gibt es ein Aufklappmenü mit dem Namen des Spiels. Klikct Ihr dieses an, könnt Ihr unter anderem `Stylesheet der Geschichte bearbeiten`auswählen. Dort gebe ich bei jeder Geschichte folgenden CSS-Code ein:
 
-~~~css
+```css
 tw-story {
   background-color: #ffffff;
   color: #000000;
 }
 
 tw-sidebar tw-icon.redo {
-	display: none;
+    display: none;
 }
 tw-sidebar tw-icon.undo {
-	display: none;
+    display: none;
 }
 
 tw-passage {
-	text-align: left; 
-	font-size: 4vh;
-	font-size: 4vw;
-	font-size: 4vmin;
-	line-height: normal;
+    text-align: left; 
+    font-size: 4vh;
+    font-size: 4vw;
+    font-size: 4vmin;
+    line-height: normal;
 }
 
 img {max-width: 100%;
      max-height: 100%;
 }
-~~~
+```
 
 Die Zeilen mit dem `tw-icon.redo` und `tw-icon.undo` scheinen seit Harlowe 3.0.1 obsolet zu sein. Bis dahin hatten sie zwei (Default-) »Mogelbuttons« versteckt. Aber da sie niemand wollte, sind sie im letzten Release verschwunden. Auch ich weine ihnen keine Tränen nach -- sicherheitshalber lasse ich sei aber noch stehen (falls sie doch wieder eingebaut werden, bin ich gewappnet).
 
@@ -79,35 +76,35 @@ Der erste Eintrag setzt die Hintergrundfarbe der Geschichte auf weiß und die Te
 
 Füllen wir einfach die drei neuen Passagen mit Text. Zuerst die Passage `Dinkelsbach`:
 
-~~~
+```
 Dinkelsbach ist die Stadt der Milchmänner! Du bist hier falsch!
 🍺🍺🍺 Gutes Bier gibt es nur in [[Lüdenscheid]].
 Aber auf gar keinen Fall in [[Dinkelsbach]], hier gibt es nur Milch.
-~~~
+```
 
 Selbstverständlich kann Twine mit Emojis umgehen. Zum Beweis habe ich die drei Biergläser dort eingebaut. 🤓 Doch nun zur Passage `Lüdenscheid`:
 
-~~~
+```
 Doch wer will nach einem Bier noch in Lüdenscheid bleiben? Die Frau an Deiner Seite erinnert Dich an Dein kuscheliges Bett. Also ab nach [[Hause -> Home, Sweet Home]]!
-~~~
+```
 
 Der Link mit dem Pfeil (`->`) ist eine alternative Form, in der Harlowe mit Links umgehen kann. Der Linktext `Hause` verlinkt auf die Passage `Home, Sweet Home`. Es gibt noch weitere, alternative Linkformen, unter anderem kann man den Pfeil `->` durch einen senkrechten Strich `|` ersetzen, aber die mit dem Pfeil scheint in Harlowe seit Version 2.0 die empfohlene Form zu sein.
 
 Zu guter Letzt kümmere ich mich um die Passage `Oberhausen`:
 
-~~~
+```
 Der Bahnhof in Oberhausen ist eine Sackgasse!
 Schnell zurück an den [[Start]]
-~~~
+```
 
 Nun ist das schon fast eine kleine Geschichte. Nur die neugeschaffene Passage `Home, Sweet Home` braucht noch ein wenig Text:
 
-~~~
+```
 =><=
 *Home, Sweet Home!*
 
 Noch einmal [[spielen -> Start]]?
-~~~
+```
 
 Die beiden nach innen zeigenden Doppelpfeile (`=><=`) weisen Twine an, den folgenden Text zu zentrieren und die Sternchen sind wie in Markdown der Befehl, den eingeschlossenen Text *kursiv* zu setzen.
 
@@ -117,9 +114,9 @@ Schaut nun auf den Editor in seiner neuen Schönheit. Die Passagen wurden von Tw
 
 Aber was ist mit Bildern? Bilder können in Twine mit ganz normalen HTML-Befehlen eingebunden werden. So hat zum Beispield die Startpassage vor jedem Text diese Zeile:
 
-~~~html
+```html
 <img src="http://localhost:8888/twine/images/clappyhands.jpg" />
-~~~
+```
 
 Und da seht Ihr schon das Crux an der Sache. Damit Twine die Bilder findet, müssen sie auf einem Server liegen. Bei mir läuft sowieso ununterbrochen ein [MAMP](http://cognitiones.kantel-chaos-team.de/webworking/mamp.html), der auf Port 8888 lauscht. Da Hotlinking auf gar keinen Fall geht, habe ich dort in der `htdocs` ein Verzeichnis `twine`mit einem Unterverzeichnis `images` angelegt und dort kommen alle Bilder hinein. Wenn ich nun die Geschichte veröffentliche, tausche ihc durch ein globales *Suchen und Ersetzen* (das ist das kleine Viereck unten in der Mitte) mein lokales Bilderverzeichnis durch das endgültige Verzeichnis aus, auf dem die Bilder auf dem Server liegen. Das kann eine absolute URL, aber auch ein relatives Verzeichis sein, das endgültige Ergebnis einer Twine Geschichte ist HTML5 mit JavaScript, das nimmt da nichts krumm.
 

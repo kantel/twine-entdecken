@@ -6,7 +6,7 @@ Alice im Reich der Ringe 1
 {
   "ifid": "1e235287-0338-4142-9177-4c21f4e0e30f",
   "format": "Chapbook",
-  "format-version": "2.3.0",
+  "format-version": "2.3.1",
   "start": "Start",
   "zoom": 1
 }
@@ -151,7 +151,7 @@ Plötzlich hoppelte das [[weiße Kaninchen->Kaninchen]] in die Szene …
 
 
 :: Haselmaus2 {"position":"750,725","size":"100,100"}
-{embed image: "images/haselmaus2.jpg", alt: "Schabernack mit der Haselmaus"}
+{embed image: "images/haselmaus02.jpg", alt: "Schabernack mit der Haselmaus"}
 
 Als der Hutmacher und der Märzhase jedoch anfingen, die Haselmaus kopfüber in eine Teetasse zu stülpen, hatte sie genug. Sie beschloß, die Party zu [[verlassen->Ende]].
 

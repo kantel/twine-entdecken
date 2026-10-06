@@ -1,0 +1,237 @@
+:: StoryTitle
+Alice Tutorial 6
+
+
+:: StoryData
+{
+  "ifid": "12AE2471-577C-406A-BAFA-B11A11D4A25A",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Init",
+  "zoom": 1
+}
+
+
+:: Aufbruch {"position":"700,100","size":"100,100"}
+<img src="images/redqueen.jpg" alt: "Alice rennt mit der roten Königin" />
+
+»Es ist Zeit zu gehen« sagte die Raupe, »der $ring und die rote Königin werden Dich führen.«
+
+Alice strich mit dem Zeigefinger über den $ring und eine rote Königin tauchte aus dem Nichts auf, ergriff sie am Arm und rannte mit ihr zu einem [[neuen Ort voller Wunder->Wunderland]].
+
+
+:: Biergarten {"position":"875,350","size":"100,100"}
+<img src="images/teeparty.jpg" alt: "Teeparty" />
+
+Hier saßen seltsamerweise wieder ihre alten Freunde, der Märzhase, der verrückte Hutmacher und die Haselmaus an einem Tisch und begrüßten sie lautstark. Alice war verwirrt – aber [[blieb noch eine Weile->Haselmaus]].
+
+
+:: Blumenring {"position":"425,225","size":"100,100"}
+(set: $hat_blumenring to true)
+(set: $ring to "Blumenring")
+(display: "Magical Item")
+
+
+:: Brille {"position":"300,475","size":"100,100"}
+(set: $hat_brille to true)
+(set: $magical_item to "Brille")
+
+Alice ergriff die $magical_item und verstaute sie vorsichtig in ihrer Tasche.
+
+(display: "Aufbruch")
+
+
+:: Dorf {"position":"750,350","size":"100,100"}
+<img src="images/weisserritter.jpg" alt: "Der weiße Ritter" />
+
+Der Weg zum Dorf war von einem großen, steineren Wall versperrt. Nur ein Durchgang war offen, der von einem traurig aussehenden, weißen Ritter auf einem dürren Pferd blockiert wurde, der träumend vor sich hindöste.
+
+{(if: $hat_zauberhut)[Der $magical_item vibrierte.]
+(else:)[Die $magical_item vibrierte.]}
+
+{(if: $hat_feder)[Alice nahm die bewährte Feder und schwebte über den dösenden Ritter, der sie nicht bemerkte.]
+(else-if: $hat_brille)[Alice setzte sich die Brille auf und bemerkte, daß sie unsichtbar wurde. Leise schlich sie an den Ritter vorbei auf die andere Seite.]
+(else-if: $hat_zauberhut)[Er zog Alice förmlich direkt auf den Wall zu. Sie fühlte sich elastisch wie eine Gummipuppe. Unbemerkt schob sie sich durch die Ritzen der Mauer. Ihr Körper wurde dabei dünn wie ein Faden. Als sie die andere Seite erreicht hatte, nahm sie wieder ihre normale Form an.]}
+
+Alice erreichte so das Dorf und betrat einen [[Biergarten]] am Ortseingang.
+
+
+:: Eisenring {"position":"50,225","size":"100,100"}
+(set: $hat_eisenring to true)
+(set: $ring to "Eisenring")
+(display: "Magical Item")
+
+
+:: Ende {"position":"750,475","size":"100,100"}
+<img src="images/grinsi1.jpg" alt: "Grinsekatze" />
+
+Am Ausgang des Biergartens traf sie auf die Grinsekatze. Sie grinste nur und meinte: »Hat die Raupe wieder zu viel gekifft?« Und verschwand …
+
+Hier ist die Geschichte vorläufig zu Ende.
+
+{(if: $hat_schluessel)[Glückwunschsch! Das war der längste Durchlauf, der bisher spielbar ist.]
+(else:)[Du bist schon weit gekommen, aber da geht noch mehr …]}
+
+[[Noch einmal spielen->Init]]? Oder lieber [[nach Hause gehen->Home]]?
+
+
+:: Feder {"position":"175,475","size":"100,100"}
+(set: $hat_feder to true)
+(set: $magical_item to "Feder")
+
+Alice ergriff die $magical_item und verstaute sie vorsichtig in ihrer Tasche.
+
+(display: "Aufbruch")
+
+
+:: Flug {"position":"625,350","size":"100,100"}
+(set: $hat_schluessel to true)
+
+<img src="images/chessboard2.jpg" alt: "Blick auf das Wunderland" />
+
+Alice nahm die Feder in ihre Hand und schwebte langsam nach oben. Die Feder brachte auch ihren $ring zum Schimmern und der lenkte ihre Hand zu einem der Schlüssel. Alice pflückte ihn vom Ast und verstaute ihn in ihrer Schürzentasche. Vorsichtig schwebte sie wieder nach unten.
+
+Nun war sie bereit, das [[Dorf->Dorf]] zu erkunden.
+
+
+:: Goldring {"position":"300,225","size":"100,100"}
+(set: $hat_goldring to true)
+(set: $ring to "Goldring")
+(display: "Magical Item")
+
+
+:: Gravurring {"position":"550,225","size":"100,100"}
+(set: $hat_gravurring to true)
+(set: $ring to "Gravurring")
+(display: "Magical Item")
+
+
+:: Haselmaus {"position":"625,475","size":"100,100"}
+<img src="images/haselmaus02.jpg" alt: "Schabernack mit der Haselmaus" />
+
+Als der Hutmacher und der Märzhase jedoch anfingen, die Haselmaus kopfüber in eine Teetasse zu stülpen, hatte sie genug. Sie beschloß, die Party zu [[verlassen->Ende]].
+
+
+:: Home {"position":"875,475","size":"100,100"}
+<img src="images/home.jpg" alt: "Alice ist wieder zu Hause" />
+
+Zuhause traf Alice ihre Freunde wieder, das weiße Kaninchen und den großen, grünen Elephanten, mit mit denen sie noch gemütlich ein Kännchen Kaffee trank. (Sie hatte genug von Teepartys.)
+
+So wurde es doch noch ein gelungener Nachmittag.
+
+
+:: Init {"position":"100,100","size":"100,100"}
+(set: $ring to "")
+(set: $hat_silberring to false) <!-- Dorf(-Laden) -->
+(set: $hat_goldring to false)   <!-- Baum -> Frosch -->
+(set: $hat_blumenring to false) <!-- Humpel Pumpel -->
+(set: $hat_gravurring to false) <!-- Bibliothek -->
+(set: $hat_eisenring to false)  <!-- Baum -> Müder Ritter -->
+(set: $magical_item to "")
+(set: $hat_brille to false)
+(set: $hat_feder to false)
+(set: $hat_zauberhut to false)
+(set: $hat_schluessel to false)
+
+(go-to: "Start")
+
+
+:: Magical Item {"position":"300,350","size":"100,100"}
+Alice steckte den $ring an ihren Ringfinger.
+
+<img src="images/raupe3.jpg" alt="Alice und die Raupe" />
+
+Sie wollte schon den Pilz verlassen, aber die Raupe ergriff ihren Arm und sagte: »Du kannst noch einen, aber nur einen weiteren magischen Gegenstand aus meinem  Zauberkästchen für Deine gefahrvolle Reise mitnehmen. Jeder von ihnen kann Dir auf seine Weise helfen, aber Du weißt nicht wie und ich weiß nicht wann.«
+
+Sie öffnete einen zweiten Kasten. Dort lagen eine [[Feder]], eine [[Brille]] und ein [[Zauberhut]].
+
+
+:: Silberring {"position":"175,225","size":"100,100"}
+(set: $hat_silberring to true)
+(set: $ring to "Silberring")
+(display: "Magical Item")
+
+
+:: Start {"position":"300,100","size":"100,100"}
+# Alice im Reich der Ringe
+
+<img src="images/raupe2.jpg" alt="Alice und die Raupe" />
+
+Bei ihrem erneuten Besuch im Wunderland beschloss Alice, endlich den lange verschobenen, aber versprochenen Besuch bei der Raupe nachzuholen.
+
+Die Raupe erzählte Alice von einem geheimnisvollen Tal im Wunderland, das »Reich der Ringe« genannt wurde. Nur fünf Zugänge gäbe es zu diesem Tal, jeder sei durch einen besonderen Ring gesichert. Leider wüßte sie nicht, welcher Ring zu welchem Zugang führe und welche Gefahren hinter den jeweiligen Zugängen lauerten. Alice könne aber nur einen Ring mitnehmen. Die Raupe öffnete ein kleines Schmuckkästchen und zeigte Ihr einen [[eisernen->Eisenring]], einen [[silbernen->Silberring]], einen [[goldenen Ring->Goldring]], einen [[Ring mit einer durchbrochenen Blume->Blumenring]] und schließlich einen [[Ring mit einer seltsamen Gravur->Gravurring]].
+
+
+:: Wunderland {"position":"700,225","size":"100,100"}
+<img src="images/chessboard.jpg" alt: "Blick auf das Wunderland" />
+
+Die rote Königin war wieder verschwunden. Alice staunte. Ist das der geheime Ort? Sie stand auf einem Hügel, vor ihr ein weites Tal auf dem einige überdimensionierte Schachfiguren standen. Auf einem weiteren Hügel überragte eine Burg ein kleines Dorf, das sich im Halbkreis um den Burghügel schmiegte.
+
+Sie drehte sich um und sah einen riesigen Baum hinter sich. An den Ästen hingen dutzende bronzener Schlüssel.
+
+{(if: $hat_feder)[Die Feder schien sich in ihrer Tasche zu bewegen, so als ob sie Alice daran erinnern wollte, daß sie [[fliegen könne->Flug]]. Oder sollte sie erst einmal das [[Dorf aufsuchen->Dorf]] und weitere Erkundundungen einziehen?]
+(else:)[Leider waren die Schlüssel unerreichbar für Alice. Sie beschloß daher, [[den Hügel herunter ins Dorf->Dorf]] zu gehen.]}
+
+
+:: Zauberhut {"position":"425,475","size":"100,100"}
+(set: $hat_zauberhut to true)
+(set: $magical_item to "Zauberhut")
+
+Alice ergriff den $magical_item und setzte ihn sich vorsichtig auf den Kopf. Der Hut sagte zu ihr »Guten Tag, Alice. Das war eine gute Wahl. Alice war etwas überrascht, sie hatte noch nie einen Hut getroffen, der reden konnte. Aber im Wunderland darf sie eigentlich schon lange nichts mehr überraschen. 
+
+(display: "Aufbruch")
+
+
+:: StoryStylesheet [stylesheet]
+@font-face {
+  font-family: Berkshire; /* set name */
+  src: url(fonts/BerkshireSwash-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Regular.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Italic.ttf) format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+tw-story {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: EBGaramond, serif;
+    font-size: clamp(1.2em, 2.0vw, 1.75em);
+}
+h1 {
+  font-family: Berkshire, serif;
+  font-size: clamp(1.8em, 2.0vw, 2.75em);
+}
+tw-link, tw-ancient-link {
+    color: #ff9900;
+    font-weight: bold;
+}
+tw-link:hover {
+    color: #ff9900;
+}
+tw-link.visited {
+    color: #ff9900;
+}
+tw-link.visited:hover {
+    color: #ff9900;
+}
+.enchantment-link:hover, tw-link:hover {
+    color: #ff9900;
+}
+tw-sidebar {
+    display: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
