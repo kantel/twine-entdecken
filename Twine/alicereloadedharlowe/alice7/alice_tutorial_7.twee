@@ -1,0 +1,163 @@
+:: StoryTitle
+Alice Tutorial 7
+
+
+:: StoryData
+{
+  "ifid": "B332441C-2D33-4D0D-932B-68CAC46A1FD0",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Init",
+  "zoom": 1
+}
+
+
+:: Bibliothek {"position":"300,225","size":"100,100"}
+<img src="images/library01.jpg" alt="Bibliothek" />
+
+Alice hatte das Gefühl, dass die Bücherwände ein Geheimnis vor ihr verbargen. Sie nahm eines der alten |regal>[Bücher aus dem Regal]. {
+(click:?regal, (action: "mouseover"))[Hinter dem Buch war ein Schalter versteckt. Als Alice ihn umlegte, schob sich das ganze Regal zur Seite und öffnete eine Tür zu einem [[weiteren Raum->Drache]].]}
+
+Alice sah sich die Regalwände genauer an …
+
+
+
+:: Drache {"position":"300,350","size":"100,100"}
+{(if: (count: (history:), "Drache") is 0)[<img src="images/drago01.jpg" alt="Der hungrige, kleine Drache" />
+
+In dem Raum saß ein kleiner Drache vor einem Tisch und jammerte laut »Ich habe Hunger, bring mir bitte etwas zu essen.«
+
+Alice hatte Mitleid und beschloß, (if: (count: (history:), "Küche") > 0)[noch einmal] die [[Küche->Küche]] aufzusuchen.]
+(else-if: (count: (history:), "Drache") is 1)[
+<img src="images/drago02.jpg" alt="Der kleine Drache mit einem Braten" />
+
+Der kleine Drache bedankte sich artig und begann hungrig, den Truthahn zu verspeisen.
+
+Währenddessen sah Alice sich neugierig um und bemerkte eine Tür zu einer kleinen [[Abstellkammer->Kammer]].]
+(else:)[<img src="images/drago03.jpg" alt="Der kleine Drache ist satt" />
+
+Der kleine Drache saß satt an seinem Tisch und Alice begann ein [[Gespräch->Gespräch]] mit ihm.]}
+
+
+:: Eingangshalle {"position":"425,225","size":"100,100"}
+<img src="images/entrancehall.jpg" alt="Eingangshalle" />
+
+Die Eingangshalle war groß und leer. Im Hintergrund gab es eine große, repräsentative, aber verfallene Treppe, die auf Alice keinen sicheren Eindruck machte und die sie lieber nicht betreten wollte.
+
+Links durch eine offene Tür konnnte sie eine [[Küche->Küche]] erkennen und rechts von ihr war der Eingang zur [[alten Bibliothek->Bibliothek]].
+
+
+:: Ende {"position":"100,475","size":"100,100"}
+<img src="images/abschieddrago.jpg" alt="Alice verabschiedet sich von Drago" />
+
+Alice hörte ihm geduldig zu und bedankte sich für seine Gesellschaft.
+
+Als sie wieder nach Hause ging, hatte sie das Gefühl, einen neuen Freund gewonnen zu haben.
+
+Damit ist die heutige Geschichte zu Ende. (link: "Noch einmal Spielen?")[(restart:)]
+
+
+:: Gespräch {"position":"300,475","size":"100,100"}
+<img src="images/drachenbraut.jpg" alt="Feuersalamander und Drachenbraut" />
+
+Der kleine Drache erzählte stolz, dass er Drago heiße und der Sohn eines Feuersalamanders sei, der sich in eine Drachenfrau verliebt hätte. Sie habe seine Liebe erwidert und dann ein Ei gelegt, aus dem der kleine Drago geschlüpft sei.
+
+Er sei etwas kleiner, als die anderen Drachen und er könne auch kein Feuer spucken, aber ansonsten fühle er sich wie die großen Drachen.
+
+[[Weiter …->Ende]]
+
+
+:: Init {"position":"100,100","size":"100,100"}
+(set: $key to (either: "unter der Fußmatte", "im Krug", "im Blumentopf"))
+
+(go-to: "Start")
+
+
+:: Kammer {"position":"175,350","size":"100,100"}
+<img src="images/attic.jpg" alt="Die Abstellkammer auf dem Dachboden" />
+
+Die Abstellkammer war leer und so ging Alice, nachdem sie eine Weile das dort liegende Spielzeug inspiziert hatte, wieder zurück in den [[Raum mit dem kleinen Drachen->Drache]].
+
+
+:: Küche {"position":"425,350","size":"100,100"}
+{(if: (history:) contains "Drache")[Auch die Küche schien ein Geheimnis zu verbergen. Vor Alice stand ein großer, leerer Tisch. An der Wand links neben ihr hing ein weiterer, großer (link: "Schalter. ")[Schalter.
+
+<img src="images/kitchen02.jpg" alt="Die Küche zaubert" />
+
+Als Alice ihn umlegte, lag auf dem Tisch wie von Zauberhand ein Teller mit einem gebratenen Truthahn. Alice nahm den Teller mit dem Braten und brachte ihn zu dem kleinen [[Drachen->Drache]].] ]
+(else:)[<img src="images/kitchen01.jpg" alt="Die leere Küche" />
+
+Die Küche machte auf Alice einen schmuddeligen, aber leeren Eindruck. Sie ging daher lieber wieder [[zurück in die Eingangshalle->Eingangshalle]].]}
+
+
+:: Start {"position":"300,100","size":"100,100"}
+# Alice und der kleine Drache
+
+<img src="images/mansion2.jpg" alt="Das alte Haus" />
+
+Alice war im Wunderland wieder zum alten Haus mit der Bibliothek unterwegs. Da sie wusste, dass der Türschlüssel $key versteckt war, hatte sie keine Schwierigkeiten, in das Haus zu kommen.
+
+Sie schloß die [[Tür zur Eingangshalle->Eingangshalle]] auf.
+
+
+:: StoryStylesheet [stylesheet]
+@font-face {
+  font-family: Berkshire; /* set name */
+  src: url(fonts/BerkshireSwash-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Regular.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Italic.ttf) format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: EBGaramond; /* set name */
+  src: url(fonts/EBGaramond-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+tw-story {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: EBGaramond, serif;
+    font-size: clamp(1.2em, 2.0vw, 1.75em);
+}
+h1 {
+  font-family: Berkshire, serif;
+  font-size: clamp(1.8em, 2.0vw, 2.75em);
+}
+tw-link, tw-ancient-link {
+    color: #ff9900;
+    font-weight: bold;
+}
+tw-link:hover {
+    color: #ff9900;
+}
+tw-link.visited {
+    color: #ff9900;
+}
+tw-link.visited:hover {
+    color: #ff9900;
+}
+.enchantment-link:hover, tw-link:hover {
+    color: #ff9900;
+}
+tw-sidebar {
+    display: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+tw-link.enchantment-mouseover, .link.enchantment-mouseover, tw-expression.enchantment-mouseover > tw-link {
+  border-bottom: none;
+}
+
+tw-link.enchantment-click, .link.enchantment-click, tw-expression.enchantment-click > tw-link {
+  color: #ff9900;
+}
