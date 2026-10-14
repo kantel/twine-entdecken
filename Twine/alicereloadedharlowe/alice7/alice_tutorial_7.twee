@@ -8,6 +8,9 @@ Alice Tutorial 7
   "format": "Harlowe",
   "format-version": "3.3.9",
   "start": "Init",
+  "tag-colors": {
+    "data": "green"
+  },
   "zoom": 1
 }
 
@@ -67,7 +70,7 @@ Er sei etwas kleiner, als die anderen Drachen und er könne auch kein Feuer spuc
 [[Weiter …->Ende]]
 
 
-:: Init {"position":"100,100","size":"100,100"}
+:: Init [data] {"position":"100,100","size":"100,100"}
 (set: $key to (either: "unter der Fußmatte", "im Krug", "im Blumentopf"))
 
 (go-to: "Start")
